@@ -4,15 +4,15 @@ Motivated researcher with a strong foundation in Explainable Artificial Intellig
 
 ## Publications
 - **Under Review**: "[SCENE: Evaluating Explainable AI Techniques Using Soft Counterfactuals](https://arxiv.org/abs/2408.04575)"  
-Submitted to: KDD 2025, EMNLP 2024 Workshop, BlackBoxNLP, NeurIPS 2024 Workshop InterpretableAI.  
-Received positive feedback with suggestions for improvement from BlackBoxNLP reviewers.  
-Currently revising for resubmission.
+- Submitted to: KDD 2025, EMNLP 2024 Workshop, BlackBoxNLP, NeurIPS 2024 Workshop InterpretableAI.  
+- Received positive feedback with suggestions for improvement from BlackBoxNLP reviewers.  
+- Currently revising for resubmission.
 
 ---
 
 ## Education
 **The University of Chicago** — Chicago, IL  
-Master of Science in Applied Data Science  
+**Master of Science in Applied Data Science**  
 December 2024  
 - **Thesis**: "Demystifying the Black Box: An Empirical Evaluation of Explainable AI Techniques in NLP Tasks"  
 - **Advisor**: Dr. Utku Pamuksuz  
@@ -21,7 +21,7 @@ December 2024
 **The Ohio State University** — Columbus, OH  
 Bachelor of Science in Business Administration  
 May 2022  
-- **Majors**: Finance, Economics, History   
+- **Majors: Finance, Economics, History**   
 
 ---
 
@@ -32,9 +32,9 @@ Roman Family Center for Decision Research, Booth School of Business, The Univers
 - Co-manage studies and collect data for renowned scholars like Dr. Nicholas Epley and Dr. Sarah Sebo.
 - Literature review.
 
-**Notable Project Managed**: *"Engaging with a Robot to Improve Your Overall Wellbeing"*  
-- Collaborated with the University of Chicago Human-Robot Interaction Lab.  
-- Investigated the impact of personality alignment between humans and robots on the effectiveness of positive psychology exercises.
+> ***Notable Project Managed***: *"Engaging with a Robot to Improve Your Overall Wellbeing"*  
+> - Collaborated with the University of Chicago Human-Robot Interaction Lab.  
+> - Investigated the impact of personality alignment between humans and robots on the effectiveness of positive psychology exercises.
 
 **Research Assistant at Epley Lab**  
 September 2024 – Present  
