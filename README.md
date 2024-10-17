@@ -12,7 +12,7 @@ Currently revising for resubmission.
 
 ## Education
 **The University of Chicago** — Chicago, IL  
-Master of Science in Applied Data Science 
+Master of Science in Applied Data Science  
 December 2024  
 - **Thesis**: "Demystifying the Black Box: An Empirical Evaluation of Explainable AI Techniques in NLP Tasks"  
 - **Advisor**: Dr. Utku Pamuksuz  
