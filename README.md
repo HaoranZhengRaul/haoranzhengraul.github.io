@@ -21,7 +21,7 @@ Master of Science in Applied Data Science
 **The Ohio State University** — Columbus, OH  
 Bachelor of Science in Business Administration  
 *May 2022*  
-- **Majors**: Finance , Economics , History   
+- **Majors**: Finance, Economics, History   
 
 ---
 
@@ -59,7 +59,7 @@ Department of History, The Ohio State University
 
 ## Teaching Experience
 **Teaching Assistant for Statistics 2320** 
-### February 2021-May 2022  
+February 2021-May 2022  
 The Ohio State University  
 - Taught two recitations weekly (65 students each) about statistical topics including hypothesis testing, regression, time series, Z and T distribution, two-sample comparisons, Chi-square, and ANOVA.  
 - Created customized review notes and visual aids for all 920 enrolled students.  
@@ -70,7 +70,7 @@ The Ohio State University
 
 ## Honors and Awards
 **Pace Setters Award** 
-### May 2022  
+May 2022  
 Fisher College of Business, The Ohio State University  
 - Highest distinction for excellence in academics, leadership, and service.
 
@@ -78,7 +78,7 @@ Fisher College of Business, The Ohio State University
 
 ## Applied Experience
 **Financial Analyst** 
-### May 2021-May 2023  
+May 2021-May 2023  
 China Automotive Systems, Inc., Troy, Michigan  
 - Designed a neural model that utilized heterogeneous data to forecast and troubleshoot steering gear production.  
 - Analyzed financial and non-financial data to project future outcomes.  
