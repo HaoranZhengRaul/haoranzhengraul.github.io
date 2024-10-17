@@ -12,7 +12,7 @@ Motivated researcher with a strong foundation in Explainable Artificial Intellig
 
 ## Education
 **The University of Chicago** — Chicago, IL  
-**Master of Science in Applied Data Science**  
+Master of Science in Applied Data Science  
 December 2024  
 - **Thesis**: "Demystifying the Black Box: An Empirical Evaluation of Explainable AI Techniques in NLP Tasks"  
 - **Advisor**: Dr. Utku Pamuksuz  
@@ -21,7 +21,7 @@ December 2024
 **The Ohio State University** — Columbus, OH  
 Bachelor of Science in Business Administration  
 May 2022  
-- **Majors: Finance, Economics, History**   
+- Majors: Finance, Economics, History   
 
 ---
 
