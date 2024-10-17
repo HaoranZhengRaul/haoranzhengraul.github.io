@@ -1,5 +1,12 @@
-## Summary
-Motivated researcher with a strong foundation in Explainable Artificial Intelligence (XAI) and Machine Learning. Completed a M.S. in Applied Data Science at the University of Chicago with a 4.0 GPA. Authored the paper "SCENE: Evaluating Explainable AI Techniques Using Soft Counterfactuals," which introduces an innovative causal inference method to assess XAI techniques in text classification. Holds bachelor's degrees in Economics, Finance, and History from The Ohio State University. Experienced in teaching and research roles across multiple disciplines, including Behavioral Science and Statistics. Recipient of the Pace Setters Award.
+Motivated researcher with a strong foundation in Explainable Artificial Intelligence (XAI) and Machine Learning. Completed a M.S. in Applied Data Science at the University of Chicago with a 4.0 GPA. Authored the paper "[SCENE: Evaluating Explainable AI Techniques Using Soft Counterfactuals](https://arxiv.org/abs/2408.04575)," which introduces an innovative causal inference method to assess XAI techniques in text classification. Holds bachelor's degrees in Economics, Finance, and History from The Ohio State University. Experienced in teaching and research roles across multiple disciplines, including Behavioral Science and Statistics. Recipient of the Pace Setters Award.
+
+---
+
+## Publications
+- **Under Review**: "[SCENE: Evaluating Explainable AI Techniques Using Soft Counterfactuals](https://arxiv.org/abs/2408.04575)"  
+Submitted to: KDD 2025, EMNLP 2024 Workshop, BlackBoxNLP, NeurIPS 2024 Workshop InterpretableAI.  
+Received positive feedback with suggestions for improvement from BlackBoxNLP reviewers.  
+Currently revising for resubmission.
 
 ---
 
@@ -15,14 +22,6 @@ Master of Science in Applied Data Science
 Bachelor of Science in Business Administration  
 *May 2022*  
 - **Majors**: Finance , Economics , History   
-
----
-
-## Publications
-- **Under Review**: "SCENE: Evaluating Explainable AI Techniques Using Soft Counterfactuals"  
-Submitted to: KDD 2025, EMNLP 2024 Workshop, BlackBoxNLP, NeurIPS 2024 Workshop InterpretableAI.  
-Received positive feedback with suggestions for improvement from BlackBoxNLP reviewers.  
-Currently revising for resubmission.
 
 ---
 
