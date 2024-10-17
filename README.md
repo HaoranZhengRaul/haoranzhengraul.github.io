@@ -4,9 +4,7 @@ Motivated researcher with a strong foundation in Explainable Artificial Intellig
 
 ## Publications
 - **Under Review**: "[SCENE: Evaluating Explainable AI Techniques Using Soft Counterfactuals](https://arxiv.org/abs/2408.04575)"  
-- Submitted to: KDD 2025, EMNLP 2024 Workshop, BlackBoxNLP, NeurIPS 2024 Workshop InterpretableAI.  
-- Received positive feedback with suggestions for improvement from BlackBoxNLP reviewers.  
-- Currently revising for resubmission.
+
 
 ---
 
@@ -29,8 +27,6 @@ May 2022
 **Research Assistant at Mindworks Lab**  
 April 2024 – Present  
 Roman Family Center for Decision Research, Booth School of Business, The University of Chicago
-- Co-manage studies and collect data for renowned scholars like Dr. Nicholas Epley and Dr. Sarah Sebo.
-- Literature review.
 
 > ***Notable Project Managed***: *"Engaging with a Robot to Improve Your Overall Wellbeing"*  
 > - Collaborated with the University of Chicago Human-Robot Interaction Lab.  
@@ -39,21 +35,17 @@ Roman Family Center for Decision Research, Booth School of Business, The Univers
 **Research Assistant at Epley Lab**  
 September 2024 – Present  
 Roman Family Center for Decision Research, Booth School of Business, The University of Chicago  
-- Worked directly with Dr. Nicholas Epley.
-- Coordinated the Multicultural Study with Yale scholar Yin Li.  
-- Studied cross-cultural perceptions of others' beliefs and preferences.
+
 
 **Research Assistant for Dr. Christopher Reed**  
 September 2024 – Present  
 Department of History, The Ohio State University  
-- Applied modern NLP techniques and the SCENE method to traditional History research.  
-- Aimed to identify the significance of previously unseen documents.
 
 ---
 
 ## Presentations
 **Invited Speaker** (Declined due to scheduling conflicts):  
-*Causal Inference Workshop at KDD 2024*, Barcelona, Spain
+Causal Inference Workshop at KDD 2024, Barcelona, Spain
 
 ---
 
@@ -61,10 +53,6 @@ Department of History, The Ohio State University
 **Teaching Assistant for Statistics 2320**  
 February 2021-May 2022  
 The Ohio State University  
-- Taught two recitations weekly (65 students each) about statistical topics including hypothesis testing, regression, time series, Z and T distribution, two-sample comparisons, Chi-square, and ANOVA.  
-- Created customized review notes and visual aids for all 920 enrolled students.  
-- Demonstrated how to use analytic tools such as StatCrunch and R.  
-- Held weekly office hours for active problem-solving.
 
 ---
 
@@ -80,10 +68,6 @@ Fisher College of Business, The Ohio State University
 **Financial Analyst**  
 May 2021-May 2023  
 China Automotive Systems, Inc., Troy, Michigan  
-- Designed a neural model that utilized heterogeneous data to forecast and troubleshoot steering gear production.  
-- Analyzed financial and non-financial data to project future outcomes.  
-- Researched current finance industry trends on the Bloomberg terminal and presented reports to the CEO at monthly meetings.  
-- Provided recommendations that positively impacted company decision-making.
 
 ---
 
