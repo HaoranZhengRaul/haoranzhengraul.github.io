@@ -75,13 +75,13 @@ China Automotive Systems, Inc., Troy, Michigan
 
 ## References
 - **Dr. Utku Pamuksuz** — Assistant Clinical Professor  
-- The University of Chicago  
+  The University of Chicago  
   Email: pamuksuz@uchicago.edu  
 
 - **Dr. Batuhan Gundogdu** — Research Assistant Professor  
-- The University of Chicago  
+  The University of Chicago  
   Email: gundogdu@uchicago.edu  
 
 - **Dr. Greg Green** — Associate Senior Instructional Professor of Computer Science, Director M.S. in Applied Data Science  
-- The University of Chicago  
+  The University of Chicago  
   Email: greggreen@uchicago.edu
