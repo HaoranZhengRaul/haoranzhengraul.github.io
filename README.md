@@ -1,5 +1,6 @@
 Motivated researcher with a strong foundation in Explainable Artificial Intelligence (XAI) and Machine Learning. Completed M.S. in Applied Data Science at the University of Chicago with a 4.0 GPA. Authored the paper "[*SCENE: Evaluating Explainable AI Techniques Using Soft Counterfactuals*](https://scholar.google.com/citations?hl=en&view_op=list_works&gmla=ALUCkoW2B9_cfbb3bricQPJNTxlYXIpwGfyosG2Q-s1wwWjqIZRvdeLHpzntLlOdaNDhENJ9NWGrVNKOKHR42g&user=t8z21IQAAAAJ)," which introduces an innovative causal inference method to assess XAI techniques in text classification. Holds bachelor's degrees in Economics, Finance, and History from The Ohio State University. Experienced in teaching and research roles across multiple disciplines, including Behavioral Science and Statistics. Recipient of the Pace Setters Award.  
-[View my CV](./Haoran Zheng CV 2024.pdf)
+[View my CV](./Haoran Zheng CV 2024.pdf)  
+[View my Statement of Purpose](./Haoran Zheng Candidate Statement 2024.pdf)
 
 ---
 
@@ -73,11 +74,14 @@ China Automotive Systems, Inc., Troy, Michigan
 ---
 
 ## References
-- **Dr. Utku Pamuksuz** — Assistant Clinical Professor, The University of Chicago  
+- **Dr. Utku Pamuksuz** — Assistant Clinical Professor  
+- The University of Chicago  
   Email: pamuksuz@uchicago.edu  
 
-- **Dr. Batuhan Gundogdu** — Research Assistant Professor, The University of Chicago  
+- **Dr. Batuhan Gundogdu** — Research Assistant Professor  
+- The University of Chicago  
   Email: gundogdu@uchicago.edu  
 
-- **Dr. Greg Green** — Associate Senior Instructional Professor of Computer Science, Director MS in Applied Data Science, The University of Chicago  
+- **Dr. Greg Green** — Associate Senior Instructional Professor of Computer Science, Director M.S. in Applied Data Science  
+- The University of Chicago  
   Email: greggreen@uchicago.edu
