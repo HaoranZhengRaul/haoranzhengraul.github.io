@@ -4,7 +4,6 @@ Motivated researcher with a strong foundation in Explainable Artificial Intellig
 
 [View My CV](./Haoran Zheng CV 2024.pdf)  
 [View My Statement of Purpose](./Haoran Zheng Candidate Statement 2024.pdf)  
-[Fun Facts About Me](./Fun Facts.pdf)
 
 ---
 
@@ -88,4 +87,10 @@ China Automotive Systems, Inc., Troy, Michigan
 
 - **Dr. Greg Green** — Associate Senior Instructional Professor of Computer Science, Director M.S. in Applied Data Science  
   The University of Chicago  
-  Email: greggreen@uchicago.edu
+  Email: greggreen@uchicago.edu  
+
+---
+
+[Fun Facts About Me](./Fun Facts.pdf)
+
+
