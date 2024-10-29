@@ -77,7 +77,7 @@ China Automotive Systems, Inc., Troy, Michigan
 ---
 
 ## References
-- **Dr. Utku Pamuksuz** — Assistant Clinical Professor  
+- **Dr. Utku Pamuksuz** — Associate Clinical Professor  
   The University of Chicago  
   Email: pamuksuz@uchicago.edu  
 
