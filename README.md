@@ -40,7 +40,7 @@ April 2024 – Present
 
 **Research Assistant at [Epley Lab](https://www.nicholasepley.com/)**  
 September 2024 – Present  
-Roman Family Center for Decision Research, Booth School of Business, The University of Chicago  
+[Roman Family Center for Decision Research](https://www.chicagobooth.edu/research/roman), Booth School of Business, The University of Chicago  
 
 
 **Research Assistant for [Dr. Christopher A. Reed](https://history.osu.edu/people/reed.434)**  
