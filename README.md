@@ -90,7 +90,6 @@ China Automotive Systems, Inc., Troy, Michigan
   The University of Chicago  
   Email: greggreen@uchicago.edu  
 
----
 
 
 
