@@ -4,6 +4,7 @@
 
 [View My CV](./Haoran Zheng CV 2024.pdf)  
 [View My Statement of Purpose](./Haoran Zheng Candidate Statement 2024.pdf)  
+[Fun Facts About Me](./Fun Facts.pdf)
 
 ---
 
@@ -91,6 +92,5 @@ China Automotive Systems, Inc., Troy, Michigan
 
 ---
 
-[Fun Facts About Me](./Fun Facts.pdf)
 
 
