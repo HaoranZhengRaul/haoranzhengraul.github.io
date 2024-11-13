@@ -4,7 +4,7 @@
 
 [View My CV](./Haoran Zheng CV 2024.pdf)  
 [View My Statement of Purpose](./Haoran Zheng Candidate Statement 2024.pdf)  
-[Fun Facts About Me](./Fun Facts.pdf)
+[**Fun Facts About Me**](./Fun Facts.pdf)
 
 ---
 
@@ -12,6 +12,11 @@
 - **Under Review**:  
 - "[*SCENE: Evaluating Explainable AI Techniques Using Soft Counterfactuals*](https://arxiv.org/abs/2408.04575)"  
 
+---
+
+## Recent Projects
+- **Check out the chatbot I made for UChicago’s M.S. in Data Science Admission Office!**:  
+- "[*Link 🤖*](https://rag-uchicago-website.streamlit.app/)"  
 
 ---
 
