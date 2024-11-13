@@ -16,7 +16,7 @@
 
 ## Recent Projects
 - **Check out the chatbot I made for UChicago’s M.S. in Data Science Admission Office!**:  
- "[Link 🤖](https://rag-uchicago-website.streamlit.app/)"  
+[Link 🤖](https://rag-uchicago-website.streamlit.app/)  
 
 ---
 
