@@ -15,7 +15,7 @@
 ---
 
 ## Recent Projects
-**Multimodal AI Chatbot for E-Commerce (Capable of Handling Both Text and Image Inputs)**  
+- **Multimodal AI Chatbot for E-Commerce (Capable of Handling Both Text and Image Inputs)**  
 [Link 🤖](https://multimodal-conversational-ai-e-commerce.streamlit.app/)&nbsp;&nbsp;&nbsp;&nbsp;[Code](https://github.com/HaoranZhengRaul/Multimodal-Conversational-AI-E-commerce)
 
 - **AI chatbot for UChicago’s M.S. in Data Science Admission Office**  
