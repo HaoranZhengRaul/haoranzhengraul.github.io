@@ -15,7 +15,10 @@
 ---
 
 ## Recent Projects
-- **Check out the AI chatbot my team and I made for UChicago’s M.S. in Data Science Admission Office!**  
+**Multimodal AI Chatbot for E-Commerce (Capable of Handling Both Text and Image Inputs)**  
+[Link 🤖](https://multimodal-conversational-ai-e-commerce.streamlit.app/)&nbsp;&nbsp;&nbsp;&nbsp;[Code](https://github.com/HaoranZhengRaul/Multimodal-Conversational-AI-E-commerce)
+
+- **AI chatbot for UChicago’s M.S. in Data Science Admission Office**  
 [Link 🤖](https://rag-uchicago-website.streamlit.app/)&nbsp;&nbsp;&nbsp;&nbsp;[PPT](./GenAI_Project.pdf)&nbsp;&nbsp;&nbsp;&nbsp;[Code](https://github.com/daichi6/rag-uchicago-website)  
 
 ---
@@ -42,7 +45,6 @@ April 2024 – Present
 
 > ***Notable Project Managed***: *"Engaging with a Robot to Improve Your Overall Wellbeing"*  
 > - Collaborated with the University of Chicago Human-Robot Interaction Lab.  
-> - Investigated the impact of personality alignment between humans and robots on the effectiveness of positive psychology exercises.
 
 **Research Assistant at [Epley Lab](https://www.nicholasepley.com/)**  
 September 2024 – Present  
