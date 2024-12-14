@@ -16,7 +16,7 @@
 
 ## Recent Projects
 - **Multimodal AI Chatbot for E-Commerce (Capable of Taking Text and Image Inputs Simultaneously)**  
-[Link 🤖](https://multimodal-conversational-ai-e-commerce.streamlit.app/)&nbsp;&nbsp;&nbsp;&nbsp;[PPT](./GenAI_Final_Project.pdf)&nbsp;&nbsp;&nbsp;&nbsp;[Code](https://github.com/HaoranZhengRaul/Multimodal-Conversational-AI-E-commerce)&nbsp;&nbsp;&nbsp;&nbsp;[TSFMs](./Time_Series_Foundation_Models.pdf)
+[Link 🤖](https://multimodal-conversational-ai-e-commerce.streamlit.app/)&nbsp;&nbsp;&nbsp;&nbsp;[PPT](./GenAI_Final_Project.pdf)&nbsp;&nbsp;&nbsp;&nbsp;[Code](https://github.com/HaoranZhengRaul/Multimodal-Conversational-AI-E-commerce)
 
 - **AI chatbot for UChicago’s M.S. in Data Science Admission Office**  
 [Link 🤖](https://rag-uchicago-website.streamlit.app/)&nbsp;&nbsp;&nbsp;&nbsp;[PPT](./GenAI_Project.pdf)&nbsp;&nbsp;&nbsp;&nbsp;[Code](https://github.com/daichi6/rag-uchicago-website)  
