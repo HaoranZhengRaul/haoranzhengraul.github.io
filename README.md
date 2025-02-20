@@ -43,11 +43,11 @@ May 2022
 September 2024 – Present  
 [Roman Family Center for Decision Research](https://www.chicagobooth.edu/research/roman), Booth School of Business, The University of Chicago
 
-
 **Research Assistant for [Dr. Christopher A. Reed](https://history.osu.edu/people/reed.434)**  
 September 2024 – Present  
 Department of History, The Ohio State University  
 
+<br>
 
 **Research Assistant at [Mindworks Lab](https://www.chicagobooth.edu/mindworks)**  
 April 2024 – September 2024  
