@@ -56,6 +56,8 @@ October 2024 – Present
 
 > ***Notable Project Managed***: *"Engaging with a Robot to Improve Your Overall Wellbeing"*  
 > - Collaborated with the University of Chicago Human-Robot Interaction Lab.  
+
+
 ---
 
 ## Presentations
