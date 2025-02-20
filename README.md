@@ -46,9 +46,7 @@ September 2024 – Present
 **Research Assistant for [Dr. Christopher A. Reed](https://history.osu.edu/people/reed.434)**  
 September 2024 – Present  
 Department of History, The Ohio State University  
-
 <br>
-
 **Research Assistant at [Mindworks Lab](https://www.chicagobooth.edu/mindworks)**  
 April 2024 – September 2024  
 
