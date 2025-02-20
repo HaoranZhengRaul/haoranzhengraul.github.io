@@ -1,4 +1,4 @@
-[Motivated researcher](https://www.linkedin.com/in/haoran-zheng-04a9551ba/) with a strong foundation in **Explainable Artificial Intelligence (XAI)** and Machine Learning. Completed M.S. in Applied Data Science at the University of Chicago with a 4.0 GPA. Authored the paper "[*SCENE: Evaluating Explainable AI Techniques Using Soft Counterfactuals*](https://scholar.google.com/citations?hl=en&view_op=list_works&gmla=ALUCkoW2B9_cfbb3bricQPJNTxlYXIpwGfyosG2Q-s1wwWjqIZRvdeLHpzntLlOdaNDhENJ9NWGrVNKOKHR42g&user=t8z21IQAAAAJ)," which introduces a novel, human-centered causal inference method to assess XAI techniques in text classification. Holds bachelor's degrees in Economics, Finance, and History from The Ohio State University. Experienced in teaching and research roles across multiple disciplines, including Behavioral Science and Statistics. Recipient of the Pace Setters Awards.  
+[Motivated AI researcher](https://www.linkedin.com/in/haoran-zheng-04a9551ba/) with a strong foundation in **Explainable Artificial Intelligence (XAI)** and Machine Learning. Completed M.S. in Applied Data Science at the University of Chicago with a 4.0 GPA. Authored the paper "[*SCENE: Evaluating Explainable AI Techniques Using Soft Counterfactuals*](https://scholar.google.com/citations?hl=en&view_op=list_works&gmla=ALUCkoW2B9_cfbb3bricQPJNTxlYXIpwGfyosG2Q-s1wwWjqIZRvdeLHpzntLlOdaNDhENJ9NWGrVNKOKHR42g&user=t8z21IQAAAAJ)," which introduces a novel, human-centered causal inference method to assess XAI techniques in text classification. Holds bachelor's degrees in Economics, Finance, and History from The Ohio State University. Experienced in teaching and research roles across multiple disciplines, including Behavioral Science and Statistics. Recipient of the Pace Setters Awards.  
 
 ---
 
@@ -34,27 +34,27 @@ December 2024
 **The Ohio State University** — Columbus, OH  
 Bachelor of Science in Business Administration  
 May 2022  
-- Majors: Finance, Economics, History   
+- Majors: Economics, History, Finance
 
 ---
 
 ## Research Experience
-**Research Assistant at [Mindworks Lab](https://www.chicagobooth.edu/mindworks)**  
-April 2024 – Present  
-[Roman Family Center for Decision Research](https://www.chicagobooth.edu/research/roman), Booth School of Business, The University of Chicago
-
-> ***Notable Project Managed***: *"Engaging with a Robot to Improve Your Overall Wellbeing"*  
-> - Collaborated with the University of Chicago Human-Robot Interaction Lab.  
-
 **Research Assistant at [Epley Lab](https://www.nicholasepley.com/)**  
 September 2024 – Present  
 [Roman Family Center for Decision Research](https://www.chicagobooth.edu/research/roman), Booth School of Business, The University of Chicago  
-
 
 **Research Assistant for [Dr. Christopher A. Reed](https://history.osu.edu/people/reed.434)**  
 September 2024 – Present  
 Department of History, The Ohio State University  
 
+**Research Assistant at [Mindworks Lab](https://www.chicagobooth.edu/mindworks)**  
+April 2024 – September 2024  
+**Research Specialist at [Mindworks Lab](https://www.chicagobooth.edu/mindworks)**  
+October 2024 – Present
+[Roman Family Center for Decision Research](https://www.chicagobooth.edu/research/roman), Booth School of Business, The University of Chicago
+
+> ***Notable Project Managed***: *"Engaging with a Robot to Improve Your Overall Wellbeing"*  
+> - Collaborated with the University of Chicago Human-Robot Interaction Lab.  
 ---
 
 ## Presentations
