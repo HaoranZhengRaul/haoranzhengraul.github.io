@@ -50,7 +50,7 @@ Department of History, The Ohio State University
 **Research Assistant at [Mindworks Lab](https://www.chicagobooth.edu/mindworks)**  
 April 2024 – September 2024  
 **Research Specialist at [Mindworks Lab](https://www.chicagobooth.edu/mindworks)**  
-October 2024 – Present 
+October 2024 – Present  
 [Roman Family Center for Decision Research](https://www.chicagobooth.edu/research/roman), Booth School of Business, The University of Chicago
 
 > ***Notable Project Managed***: *"Engaging with a Robot to Improve Your Overall Wellbeing"*  
