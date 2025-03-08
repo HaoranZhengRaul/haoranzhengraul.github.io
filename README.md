@@ -2,7 +2,7 @@ Motivated **AI researcher** ([LinkedIn](https://www.linkedin.com/in/haoran-zheng
 
 ---
 
-## [My CV](./Haoran Zheng CV 2025.pdf)  
+## [My CV/Resume](./Haoran Zheng CV 2025.pdf)  
 
 ---
 
