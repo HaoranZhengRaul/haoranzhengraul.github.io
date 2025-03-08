@@ -2,13 +2,13 @@ Motivated **AI researcher** ([LinkedIn](https://www.linkedin.com/in/haoran-zheng
 
 ---
 
-[View My CV](./Haoran Zheng CV 2025.pdf)  
+##[View My CV](./Haoran Zheng CV 2025.pdf)  
 
 ---
 
 ## Publications
 - **Under Review**:
-- "[SCENE: Evaluating Explainable AI Techniques Using Soft Counterfactuals](https://arxiv.org/abs/2408.04575)" (First author, novel human-centered causal inference method for XAI evaluation)
+- "[SCENE: Evaluating Explainable AI Techniques Using Soft Counterfactuals](https://scholar.google.com/citations?user=t8z21IQAAAAJ&hl=en&oi=sra)" (First author, novel human-centered causal inference method for XAI evaluation)
   
 ---
 
@@ -21,7 +21,7 @@ Booth School of Business, The University of Chicago
 September 2024 – Present  
 Department of History, The Ohio State University  
 
-**Research Specialist at [Mindworks Lab](https://www.chicagobooth.edu/mindworks)**  
+**Research Specialist at [Mindworks Lab](https://www.chicagobooth.edu/research/roman)**  
 April 2024 – Present  
 Booth School of Business, The University of Chicago
 
@@ -57,7 +57,7 @@ Causal Inference Workshop at KDD 2024, Barcelona, Spain
 ---
 
 ## Teaching Experience
-**Lead Teaching Assistant, Statistics 2320**  (900+ students/semester)
+**Lead Teaching Assistant, Statistics 2320**  (900+ students/semester)  
 February 2021-May 2022  
 The Ohio State University  
 
