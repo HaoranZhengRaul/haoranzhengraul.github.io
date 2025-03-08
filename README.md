@@ -13,7 +13,7 @@ Motivated **AI researcher** ([LinkedIn](https://www.linkedin.com/in/haoran-zheng
 ---
 
 ## Research Experience
-**Research Assistant at [Epley Lab](https://www.nicholasepley.com/)**  
+**Research Assistant at [Epley Lab](https://scholar.google.com/citations?user=4BpUtrQAAAAJ&hl=en)**  
 September 2024 – Present  
 Booth School of Business, The University of Chicago
 
