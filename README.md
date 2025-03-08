@@ -1,4 +1,4 @@
-Motivated **AI researcher** ([LinkedIn](https://www.linkedin.com/in/haoran-zheng-04a9551ba/)) with a focus on Explainable AI. Current Research Assistant at [Epley Lab](https://www.nicholasepley.com/). Graduated with an **M.S. in Data Science** from **the University of Chicago** with a 4.0 GPA. Earned bachelor’s degrees in **Economics, Finance, and History** as a triple major at The Ohio State University. Experienced in teaching roles across STEM fields, including Statistics. Recipient of [the Pace Setters Awards](https://fisher.osu.edu/about/awards/pace-setters).  
+Motivated **AI researcher** ([LinkedIn](https://www.linkedin.com/in/haoran-zheng-04a9551ba/)) with a focus on Explainable AI. Current Research Assistant at [Epley Lab](https://www.nicholasepley.com/). Graduated with an **M.S. in Data Science** from **the University of Chicago** with a 4.0 GPA. Earned bachelor’s degrees in **Economics, Finance, and History** as a triple major at The Ohio State University. Experienced in teaching roles across STEM fields, including Statistics. Recipient of the[Pace Setters Awards](https://fisher.osu.edu/about/awards/pace-setters).  
 
 ---
 
@@ -64,7 +64,7 @@ The Ohio State University
 ---
 
 ## Honors and Awards
-**The Pace Setters Awards**  
+**Pace Setters Awards**  
 May 2022  
 Fisher College of Business, The Ohio State University  
 
