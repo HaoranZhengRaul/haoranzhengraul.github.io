@@ -1,4 +1,4 @@
-Motivated AI researcher ([LinkedIn](https://www.linkedin.com/in/haoran-zheng-04a9551ba/)) with a focus on **Explainable AI**. Current Research Assistant at [Epley Lab](https://www.nicholasepley.com/). Graduated with an M.S. in Applied Data Science from the University of Chicago with a 4.0 GPA. Earned bachelor’s degrees in Economics, Finance, and History as a triple major at The Ohio State University. Experienced in teaching roles across STEM fields, including Statistics. Recipient of the Pace Setters Awards.  
+Motivated **AI researcher** ([LinkedIn](https://www.linkedin.com/in/haoran-zheng-04a9551ba/)) with a focus on **Explainable AI**. Current Research Assistant at [Epley Lab](https://www.nicholasepley.com/). Graduated with an **M.S. in Data Science from the University of Chicago** with a 4.0 GPA. Earned bachelor’s degrees in **Economics, Finance, and History** as a triple major at The Ohio State University. Experienced in teaching roles across STEM fields, including **Statistics**. Recipient of the Pace Setters Awards.  
 
 ---
 
@@ -7,16 +7,14 @@ Motivated AI researcher ([LinkedIn](https://www.linkedin.com/in/haoran-zheng-04a
 ---
 
 ## Publications
-- **Under Review**:  
-- "[*SCENE: Evaluating Explainable AI Techniques Using Soft Counterfactuals*](https://arxiv.org/abs/2408.04575)"
-- First author, the paper introduces a novel, human-centered causal inference method to assess XAI techniques.
+- **Under Review**: "[SCENE: Evaluating Explainable AI Techniques Using Soft Counterfactuals](https://arxiv.org/abs/2408.04575)" (First author, novel human-centered causal inference method for XAI evaluation)
   
 ---
 
 ## Research Experience
 **Research Assistant at [Epley Lab](https://www.nicholasepley.com/)**  
 September 2024 – Present  
-Roman Family Center for Decision Research, Booth School of Business, The University of Chicago
+Booth School of Business, The University of Chicago
 
 **Research Assistant for [Dr. Christopher A. Reed](https://history.osu.edu/people/reed.434)**  
 September 2024 – Present  
@@ -24,13 +22,13 @@ Department of History, The Ohio State University
 
 **Research Specialist at [Mindworks Lab](https://www.chicagobooth.edu/mindworks)**  
 April 2024 – Present  
-Roman Family Center for Decision Research, Booth School of Business, The University of Chicago
+Booth School of Business, The University of Chicago
 
 ---
 
 ## Education
 **The University of Chicago** — Chicago, IL  
-**Master of Science in Applied Data Science**  
+**Master of Science in Data Science**  
 December 2024  
 - **Thesis**: "Demystifying the Black Box: An Empirical Evaluation of Explainable AI Techniques in NLP Tasks"  
 - **Advisor**: [Dr. Utku Pamuksuz](https://scholar.google.com/citations?user=BySqYoYAAAAJ&hl=en) 
