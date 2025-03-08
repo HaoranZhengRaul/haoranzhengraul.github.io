@@ -7,7 +7,8 @@ Motivated **AI researcher** ([LinkedIn](https://www.linkedin.com/in/haoran-zheng
 ---
 
 ## Publications
-- **Under Review**: "[SCENE: Evaluating Explainable AI Techniques Using Soft Counterfactuals](https://arxiv.org/abs/2408.04575)" (First author, novel human-centered causal inference method for XAI evaluation)
+- **Under Review**:
+- "[SCENE: Evaluating Explainable AI Techniques Using Soft Counterfactuals](https://arxiv.org/abs/2408.04575)" (First author, novel human-centered causal inference method for XAI evaluation)
   
 ---
 
@@ -31,8 +32,7 @@ Booth School of Business, The University of Chicago
 **Master of Science in Data Science**  
 December 2024  
 - **Thesis**: "Demystifying the Black Box: An Empirical Evaluation of Explainable AI Techniques in NLP Tasks"  
-- **Advisor**: [Dr. Utku Pamuksuz](https://scholar.google.com/citations?user=BySqYoYAAAAJ&hl=en) 
-- **Notable Coursework**: Bayesian Methods, Generative AI Principles, Advanced Linear Algebra for ML  
+- **Advisor**: [Dr. Utku Pamuksuz](https://scholar.google.com/citations?user=BySqYoYAAAAJ&hl=en)
 
 **The Ohio State University** — Columbus, OH  
 Bachelor of Science in Business Administration  
@@ -57,7 +57,7 @@ Causal Inference Workshop at KDD 2024, Barcelona, Spain
 ---
 
 ## Teaching Experience
-**Teaching Assistant for Statistics 2320**  
+**Lead Teaching Assistant, Statistics 2320**  (900+ students/semester)
 February 2021-May 2022  
 The Ohio State University  
 
