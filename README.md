@@ -15,7 +15,7 @@ Motivated AI researcher ([LinkedIn](https://www.linkedin.com/in/haoran-zheng-04a
 ## Research Experience
 **Research Assistant at [Epley Lab](https://www.nicholasepley.com/)**  
 September 2024 – Present  
-[Roman Family Center for Decision Research](https://www.chicagobooth.edu/research/roman), Booth School of Business, The University of Chicago
+Roman Family Center for Decision Research, Booth School of Business, The University of Chicago
 
 **Research Assistant for [Dr. Christopher A. Reed](https://history.osu.edu/people/reed.434)**  
 September 2024 – Present  
@@ -32,11 +32,11 @@ Roman Family Center for Decision Research, Booth School of Business, The Univers
 
 ## Education
 **The University of Chicago** — Chicago, IL  
-Master of Science in Applied Data Science  
+**Master of Science in Applied Data Science**  
 December 2024  
 - **Thesis**: "Demystifying the Black Box: An Empirical Evaluation of Explainable AI Techniques in NLP Tasks"  
-- **Advisor**: Dr. Utku Pamuksuz 
-- **Notable Coursework**: Bayesian Methods, Generative AI Principles, Advanced Linear Algebra for ML  
+- **Advisor**: [Dr. Utku Pamuksuz](https://scholar.google.com/citations?user=BySqYoYAAAAJ&hl=en) 
+- Notable Coursework: Bayesian Methods, Generative AI Principles, Advanced Linear Algebra for ML  
 
 **The Ohio State University** — Columbus, OH  
 Bachelor of Science in Business Administration  
@@ -49,7 +49,7 @@ May 2022
 - **Multimodal AI Chatbot for E-Commerce (Capable of Taking Text and Image Inputs Simultaneously)**  
 [Link 🤖](https://multimodal-conversational-ai-e-commerce.streamlit.app/)&nbsp;&nbsp;&nbsp;&nbsp;[PPT](./GenAI_Final_Project.pdf)&nbsp;&nbsp;&nbsp;&nbsp;[Code](https://github.com/HaoranZhengRaul/Multimodal-Conversational-AI-E-commerce)
 
-- **AI chatbot for UChicago’s M.S. in Data Science Admission Office**  
+- *AI chatbot for UChicago’s M.S. in Data Science Admission Office*  
 [Link 🤖](https://rag-uchicago-website.streamlit.app/)&nbsp;&nbsp;&nbsp;&nbsp;[PPT](./GenAI_Project.pdf)&nbsp;&nbsp;&nbsp;&nbsp;[Code](https://github.com/daichi6/rag-uchicago-website)  
 
 ---
