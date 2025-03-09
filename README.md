@@ -8,7 +8,7 @@ Motivated [**AI/ML researcher**](https://scholar.google.com/citations?user=t8z21
 
 ## Publications
 - **Under Review**:
-- "[SCENE: Evaluating Explainable AI Techniques Using Soft Counterfactuals](https://arxiv.org/abs/2408.04575)" (First author, novel human-centered causal inference method for XAI evaluation)
+- "[SCENE: Evaluating Explainable AI Techniques Using Soft Counterfactuals](https://scholar.google.com/citations?user=t8z21IQAAAAJ&hl=en)" (First author, novel human-centered causal inference method for XAI evaluation)
   
 ---
 
