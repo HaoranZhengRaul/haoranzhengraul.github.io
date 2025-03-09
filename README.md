@@ -1,4 +1,4 @@
-Motivated **AI researcher** with a focus on Explainable AI. Current Research Assistant at [Epley Lab](https://www.nicholasepley.com/). Graduated with **M.S. in Data Science** from **The University of Chicago** with a 4.0 GPA. Earned bachelor’s degrees in **Economics, Finance, and History** as a triple major at The Ohio State University. Experienced in teaching roles across STEM fields, including Statistics. Recipient of the [Pace Setters Awards](https://fisher.osu.edu/about/awards/pace-setters).  
+Motivated [**AI researcher**](https://scholar.google.com/citations?user=t8z21IQAAAAJ&hl=en) with a focus on Explainable AI. Current Research Assistant at [Epley Lab](https://www.nicholasepley.com/). Graduated with an **M.S. in Data Science** from **The University of Chicago** with a 4.0 GPA. Earned bachelor’s degrees in **Economics, Finance, and History** as a triple major at The Ohio State University. Experienced in teaching roles across STEM fields, including Statistics. Recipient of the [Pace Setters Awards](https://fisher.osu.edu/about/awards/pace-setters).  
 
 ---
 
