@@ -2,7 +2,7 @@ Motivated [**AI/ML researcher**](https://scholar.google.com/citations?user=t8z21
 
 ---
 
-## [My CV/Resume](./Haoran Zheng CV 2025.pdf)  
+## [My CV/Resume](./Haoran Resume.pdf)  
 
 ---
 
