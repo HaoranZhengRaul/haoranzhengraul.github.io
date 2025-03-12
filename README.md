@@ -35,7 +35,7 @@ December 2024
 - **Advisor**: [Dr. Utku Pamuksuz](https://scholar.google.com/citations?user=BySqYoYAAAAJ&hl=en)
 
 **The Ohio State University** — Columbus, OH  
-Bachelor of Science in Business Administration  
+Bachelor of Science in Economics  
 May 2022  
 - Majors: Economics, History, Finance
 
