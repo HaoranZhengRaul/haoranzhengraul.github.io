@@ -37,7 +37,7 @@ December 2024
 **The Ohio State University** — Columbus, OH  
 Bachelor of Science in Economics  
 May 2022  
-- Majors: Economics, History, Finance
+- Majors: Economics, Finance, and History
 
 ---
 
