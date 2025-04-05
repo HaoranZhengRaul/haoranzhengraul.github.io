@@ -13,15 +13,15 @@ Motivated [**AI/ML researcher**](https://scholar.google.com/citations?user=t8z21
 ---
 
 ## Research Experience
-**Research Assistant at [Epley Lab](https://scholar.google.com/citations?user=4BpUtrQAAAAJ&hl=en)**  
+**Research Assistant in Behavioral Science at [Epley Lab](https://scholar.google.com/citations?user=4BpUtrQAAAAJ&hl=en)**  
 September 2024 – Present  
 Booth School of Business, The University of Chicago
 
-**Research Assistant for [Dr. Christopher A. Reed](https://history.osu.edu/people/reed.434)**  
+**Research Assistant in History for [Dr. Christopher A. Reed](https://history.osu.edu/people/reed.434)**  
 September 2024 – Present  
 Department of History, The Ohio State University  
 
-**Research Specialist at [Mindworks Lab](https://www.chicagobooth.edu/research/roman)**  
+**Research Specialist in Behavioral Science at [Mindworks Lab](https://www.chicagobooth.edu/research/roman)**  
 April 2024 – Present  
 Booth School of Business, The University of Chicago
 
