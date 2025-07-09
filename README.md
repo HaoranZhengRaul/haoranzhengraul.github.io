@@ -1,4 +1,4 @@
-Motivated [**AI/ML researcher**](https://scholar.google.com/citations?user=t8z21IQAAAAJ&hl=en) with a focus on Explainable AI. Current Research Assistant at the [Epley Lab](https://www.nicholasepley.com/). Graduated with **M.S. in Data Science** from **The University of Chicago** with a 4.0 GPA. Earned bachelor’s degrees in **Economics, Finance, and History** as a triple major at The Ohio State University. Experienced in teaching roles across STEM fields, including Statistics. Recipient of the [Pace Setters Awards](https://fisher.osu.edu/about/awards/pace-setters).  
+Current Pre-Doctoral Fellow at UChicago Booth in Quantitative Marketing with Professor [**Andreas Kraft**](https://www.chicagobooth.edu/faculty/directory/k/andreas-kraft). Beyond my full-time work, I actively research AI topics—especially [**AI Interpretability and AI Welfare**](https://scholar.google.com/citations?user=t8z21IQAAAAJ&hl=en).  Graduated with **M.S. in Data Science** from **The University of Chicago** with a 4.0 GPA. Earned bachelor’s degrees in **Economics, Finance, and History** as a triple major at The Ohio State University. Experienced in teaching roles across STEM fields, including Statistics. Recipient of the [Pace Setters Awards](https://fisher.osu.edu/about/awards/pace-setters).  
 
 ---
 
@@ -6,23 +6,26 @@ Motivated [**AI/ML researcher**](https://scholar.google.com/citations?user=t8z21
 
 ---
 
-## Publications
-- **Under Review**:
-- "[SCENE: Evaluating Explainable AI Techniques Using Soft Counterfactuals](https://scholar.google.com/citations?user=t8z21IQAAAAJ&hl=en)" (First author, novel human-centered causal inference method for XAI evaluation)
+## Papers & Preprints
+- "[SCENE: Evaluating Explainable AI Techniques Using Soft Counterfactuals](https://scholar.google.com/citations?user=t8z21IQAAAAJ&hl=en)" (2024, First author)
   
 ---
 
 ## Research Experience
+**Research Professional in Quantitative Marketing for [**Dr. Andreas Kraft**](https://www.chicagobooth.edu/faculty/directory/k/andreas-kraft)**  
+June 2025  – Present  
+Booth School of Business, The University of Chicago
+
 **Research Assistant in Behavioral Science at [Epley Lab](https://scholar.google.com/citations?user=4BpUtrQAAAAJ&hl=en)**  
-September 2024 – Present  
+September 2024 – June 2025  
 Booth School of Business, The University of Chicago
 
 **Research Assistant in History for [Dr. Christopher A. Reed](https://history.osu.edu/people/reed.434)**  
-September 2024 – Present  
+September 2024 – May 2025  
 Department of History, The Ohio State University  
 
 **Research Specialist in Behavioral Science at [Mindworks Lab](https://www.chicagobooth.edu/research/roman)**  
-April 2024 – Present  
+April 2024 – June 2025  
 Booth School of Business, The University of Chicago
 
 ---
@@ -41,22 +44,7 @@ May 2022
 
 ---
 
-## Recent Projects
-- **Multimodal AI Chatbot for E-Commerce (Capable of Taking Text and Image Inputs Simultaneously)**  
-[Link 🤖](https://multimodal-conversational-ai-e-commerce.streamlit.app/)&nbsp;&nbsp;&nbsp;&nbsp;[PPT](./GenAI_Final_Project.pdf)&nbsp;&nbsp;&nbsp;&nbsp;[Code](https://github.com/HaoranZhengRaul/Multimodal-Conversational-AI-E-commerce)
-
-- **AI chatbot for UChicago’s M.S. in Data Science Admission Office**  
-[Link 🤖](https://rag-uchicago-website.streamlit.app/)&nbsp;&nbsp;&nbsp;&nbsp;[PPT](./GenAI_Project.pdf)&nbsp;&nbsp;&nbsp;&nbsp;[Code](https://github.com/daichi6/rag-uchicago-website)  
-
----
-
-## Presentations
-**Invited Speaker** (Declined due to scheduling conflicts):  
-Causal Inference Workshop at KDD 2024, Barcelona, Spain
-
----
-
-## Teaching Experience
+## Teaching
 **Lead Teaching Assistant, Statistics 2320**  (900+ students/semester)  
 February 2021-May 2022  
 The Ohio State University  
@@ -64,7 +52,7 @@ The Ohio State University
 ---
 
 ## Honors and Awards
-**Pace Setters Awards**  
+**[Pace Setters Awards](https://fisher.osu.edu/about/awards/pace-setters)**  
 May 2022  
 Fisher College of Business, The Ohio State University  
 
