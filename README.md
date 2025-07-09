@@ -12,7 +12,7 @@ Current Pre-Doctoral Fellow at UChicago Booth in Quantitative Marketing with Pro
 ---
 
 ## Research Experience
-**Research Professional in Quantitative Marketing for [**Dr. Andreas Kraft**](https://www.chicagobooth.edu/faculty/directory/k/andreas-kraft)**  
+**Research Professional in Quantitative Marketing for [Dr. Andreas Kraft](https://www.chicagobooth.edu/faculty/directory/k/andreas-kraft)**  
 June 2025  – Present  
 Booth School of Business, The University of Chicago
 
