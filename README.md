@@ -20,13 +20,13 @@ Booth School of Business, The University of Chicago
 September 2024 – June 2025  
 Booth School of Business, The University of Chicago
 
-**Research Assistant in History for [Dr. Christopher A. Reed](https://history.osu.edu/people/reed.434)**  
-September 2024 – May 2025  
-Department of History, The Ohio State University  
-
 **Research Specialist in Behavioral Science at [Mindworks Lab](https://www.chicagobooth.edu/research/roman)**  
 April 2024 – June 2025  
 Booth School of Business, The University of Chicago
+
+**Research Assistant in History for [Dr. Christopher A. Reed](https://history.osu.edu/people/reed.434)**  
+April 2024 – May 2025  
+Department of History, The Ohio State University  
 
 ---
 
