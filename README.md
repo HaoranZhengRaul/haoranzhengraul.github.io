@@ -16,7 +16,7 @@ Current **Pre-Doctoral Fellow at UChicago Booth** in Quantitative Marketing with
 June 2025  – Present  
 Booth School of Business, The University of Chicago
 
-**Research Assistant in Behavioral Science at [Epley Lab](https://scholar.google.com/citations?user=4BpUtrQAAAAJ&hl=en)**  
+**Research Assistant in Behavioral Science for [Dr. Nicholas Epley](https://scholar.google.com/citations?user=4BpUtrQAAAAJ&hl=en)**  
 September 2024 – June 2025  
 Booth School of Business, The University of Chicago
 
