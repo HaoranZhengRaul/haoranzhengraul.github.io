@@ -1,4 +1,4 @@
-Current **Pre-Doctoral Fellow at UChicago Booth** in Quantitative Marketing with Professor [Andreas Kraft](https://www.chicagobooth.edu/faculty/directory/k/andreas-kraft). Beyond my full-time work, I actively research AI topics—especially [AI Interpretability and AI Welfare](https://scholar.google.com/citations?user=t8z21IQAAAAJ&hl=en).  Graduated with **M.S. in Data Science** from **The University of Chicago** with a 4.0 GPA. Earned bachelor’s degrees in **Economics, Finance, and History** as a triple major at The Ohio State University. Experienced in teaching roles across STEM fields, including Statistics. Recipient of the [Pace Setters Awards](https://fisher.osu.edu/about/awards/pace-setters).  
+Current **Pre-Doctoral Fellow at UChicago Booth** in Quantitative Marketing with Professor [Andreas Kraft](https://www.chicagobooth.edu/faculty/directory/k/andreas-kraft). Beyond my full-time work, I actively research AI topics—especially [AI Interpretability and AI Consciousness](https://scholar.google.com/citations?user=t8z21IQAAAAJ&hl=en).  Graduated with **M.S. in Data Science** from **The University of Chicago** with a 4.0 GPA. Earned bachelor’s degrees in **Economics, Finance, and History** as a triple major at The Ohio State University. Experienced in teaching roles across STEM fields, including Statistics. Recipient of the [Pace Setters Awards](https://fisher.osu.edu/about/awards/pace-setters).  
 
 ---
 
@@ -32,7 +32,7 @@ Department of History, The Ohio State University
 
 ## Education
 **The University of Chicago** — Chicago, IL  
-**Master of Science in Data Science**  
+Master of Science in Data Science  
 December 2024  
 - **Thesis**: "Demystifying the Black Box: An Empirical Evaluation of Explainable AI Techniques in NLP Tasks"  
 - **Advisor**: [Dr. Utku Pamuksuz](https://scholar.google.com/citations?user=BySqYoYAAAAJ&hl=en)
@@ -52,7 +52,7 @@ The Ohio State University
 ---
 
 ## Honors and Awards
-**[Pace Setters Awards](https://fisher.osu.edu/about/awards/pace-setters)**  
+**[Pace Setters Awards](https://fisher.osu.edu/about/awards/pace-setters)** (Awarded annually to the top 1% of students, considered Fisher’s highest honor) 
 May 2022  
 Fisher College of Business, The Ohio State University  
 
