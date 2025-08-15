@@ -52,7 +52,7 @@ The Ohio State University
 ---
 
 ## Honors and Awards
-**[Pace Setters Awards](https://fisher.osu.edu/about/awards/pace-setters)** (Awarded annually to the top 1% of students, considered Fisher’s highest honor) 
+**[Pace Setters Awards](https://fisher.osu.edu/about/awards/pace-setters)** (Awarded annually to the top 1% of students, considered Fisher’s highest honor)  
 May 2022  
 Fisher College of Business, The Ohio State University  
 
