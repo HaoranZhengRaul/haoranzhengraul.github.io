@@ -186,17 +186,8 @@ function initializeScrollAnimations() {
 
 // Add interactive hover effects
 document.addEventListener('DOMContentLoaded', function() {
-    // Add parallax effect to hero section
-    const hero = document.querySelector('.hero');
-    const heroImage = document.querySelector('.profile-image');
-    
-    if (hero && heroImage) {
-        window.addEventListener('scroll', function() {
-            const scrolled = window.pageYOffset;
-            const rate = scrolled * -0.5;
-            heroImage.style.transform = `translateY(${rate}px) scale(1)`;
-        });
-    }
+    // Remove parallax effect to fix weird scroll disappearing behavior
+    // Profile image will now behave as a normal static element during scroll
     
     // Add floating animation to research cards
     const researchCards = document.querySelectorAll('.research-card');

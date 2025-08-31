@@ -360,6 +360,11 @@ body {
   max-width: 100%;
 }
 
+/* Specific positioning for the formal suit photo */
+.profile-image.formal-suit {
+  object-position: center 20%;
+}
+
 /* Inline Links */
 .inline-link {
   color: var(--primary-color);
