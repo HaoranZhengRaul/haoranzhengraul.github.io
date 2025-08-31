@@ -1,8 +1,7 @@
-title: Haoran Zheng
-logo: /assets/IMG/IMG_2639 2.jpeg
-description: |
-  AI Researcher -The University of Chicago <br>
-  📩: Haoran.Zheng@chicagobooth.edu <br>
-  <a href="https://www.linkedin.com/in/haoran-zheng-04a9551ba/">LinkedIn </a> <br>
-show_downloads: false
-theme: jekyll-theme-minimal
+# Site settings - keeping for potential future use
+title: Haoran Zheng - AI Researcher
+description: AI Researcher at The University of Chicago specializing in AI Interpretability and Consciousness
+url: "https://haoranzhengraul.github.io"
+
+# GitHub Pages will now serve index.html as the main page
+# No Jekyll theme needed for custom HTML site
