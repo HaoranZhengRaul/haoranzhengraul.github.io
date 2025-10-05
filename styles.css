@@ -531,20 +531,27 @@ body {
 
 .publication-item {
   background-color: var(--card-background);
-  padding: var(--spacing-6);
-  border-radius: var(--radius-lg);
+  padding: var(--spacing-8);
+  border-radius: var(--radius-xl);
   box-shadow: var(--shadow-small);
   border: 1px solid var(--border-color);
+  border-left: 4px solid var(--primary-color);
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: var(--spacing-4);
+  gap: var(--spacing-6);
   transition: all var(--transition-fast);
+  margin-bottom: var(--spacing-8);
+}
+
+.publication-item:last-child {
+  margin-bottom: 0;
 }
 
 .publication-item:hover {
-  box-shadow: var(--shadow-medium);
-  transform: translateY(-2px);
+  box-shadow: var(--shadow-large);
+  transform: translateX(4px);
+  border-left-color: var(--accent-color);
 }
 
 .publication-item h4 {
