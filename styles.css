@@ -991,12 +991,7 @@ body {
     height: 40px;
   }
 
-  .contact-details h3 {
-    font-size: var(--font-size-base);
-  }
-
   .contact-details a {
-    font-size: var(--font-size-sm);
     word-break: break-word;
   }
   
