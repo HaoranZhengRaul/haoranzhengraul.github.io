@@ -446,7 +446,7 @@ body {
 
 /* Sections */
 .section {
-  padding: var(--spacing-20) 0;
+  padding: var(--spacing-12) 0;
 }
 
 .section:nth-child(even) {
@@ -457,7 +457,7 @@ body {
   font-size: var(--font-size-4xl);
   font-weight: 700;
   text-align: center;
-  margin-bottom: var(--spacing-16);
+  margin-bottom: var(--spacing-10);
   color: var(--text-primary);
   position: relative;
 }
@@ -477,42 +477,42 @@ body {
 /* Research Section */
 .research-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: var(--spacing-8);
-  margin-bottom: var(--spacing-16);
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--spacing-4);
+  margin-bottom: var(--spacing-8);
 }
 
 .research-card {
   background-color: var(--card-background);
-  padding: var(--spacing-8);
-  border-radius: var(--radius-xl);
+  padding: var(--spacing-5);
+  border-radius: var(--radius-lg);
   text-align: center;
-  box-shadow: var(--shadow-medium);
+  box-shadow: var(--shadow-small);
   transition: all var(--transition-normal);
   border: 1px solid var(--border-color);
 }
 
 .research-card:hover {
-  transform: translateY(-8px);
-  box-shadow: var(--shadow-large);
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-medium);
 }
 
 .research-icon {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 60px;
-  height: 60px;
+  width: 45px;
+  height: 45px;
   background-color: var(--primary-color);
   color: white;
   border-radius: var(--radius-full);
-  margin-bottom: var(--spacing-6);
+  margin-bottom: var(--spacing-3);
 }
 
 .research-card h3 {
   font-size: var(--font-size-xl);
   font-weight: 600;
-  margin-bottom: var(--spacing-4);
+  margin-bottom: var(--spacing-3);
   color: var(--text-primary);
 }
 
