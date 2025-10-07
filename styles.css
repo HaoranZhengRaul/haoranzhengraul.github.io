@@ -980,6 +980,25 @@ body {
     grid-template-columns: 1fr;
     gap: var(--spacing-4);
   }
+
+  .contact-item {
+    padding: var(--spacing-4);
+    gap: var(--spacing-3);
+  }
+
+  .contact-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .contact-details h3 {
+    font-size: var(--font-size-base);
+  }
+
+  .contact-details a {
+    font-size: var(--font-size-sm);
+    word-break: break-word;
+  }
   
   .container {
     padding: 0 var(--spacing-4);
