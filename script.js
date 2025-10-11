@@ -226,28 +226,7 @@ document.addEventListener('DOMContentLoaded', function() {
         item.style.animationDelay = `${index * 0.1}s`;
     });
     
-    // Add typewriter effect to hero title only
-    const heroTitle = document.querySelector('.hero-name');
-    if (heroTitle) {
-        const text = heroTitle.textContent;
-        heroTitle.textContent = '';
-        heroTitle.style.borderRight = '2px solid var(--primary-color)';
-        
-        let i = 0;
-        function typeWriter() {
-            if (i < text.length) {
-                heroTitle.textContent += text.charAt(i);
-                i++;
-                setTimeout(typeWriter, 80);
-            } else {
-                setTimeout(() => {
-                    heroTitle.style.borderRight = 'none';
-                }, 1000);
-            }
-        }
-        
-        setTimeout(typeWriter, 800); // Start after greeting appears
-    }
+    // Removed typewriter effect - name appears immediately
 });
 
 // Add CSS for active nav link and mobile menu
