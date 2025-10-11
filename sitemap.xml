@@ -6,16 +6,36 @@
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
+
+  <!-- Butterflies Paper - HTML -->
   <url>
     <loc>https://haoranzhengraul.github.io/papers/butterflies.html</loc>
     <lastmod>2025-10-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+
+  <!-- Butterflies Paper - PDF -->
+  <url>
+    <loc>https://haoranzhengraul.github.io/papers/Do%20AIs%20Dream%20of%20Electric%20Butterflies%3F%20Benchmarking%20LLM%20Consciousness%20via%20Theory-Grounded%20Self-Reports.pdf</loc>
+    <lastmod>2025-10-11</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- SCENE Paper - HTML -->
   <url>
     <loc>https://haoranzhengraul.github.io/papers/scene.html</loc>
     <lastmod>2025-10-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+  </url>
+
+  <!-- SCENE Paper - PDF -->
+  <url>
+    <loc>https://haoranzhengraul.github.io/papers/SCENE-%20Evaluating%20Explainable%20AI%20Techniques%20Using%20Soft%20Counterfactuals.pdf</loc>
+    <lastmod>2025-10-11</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
   </url>
 </urlset>
