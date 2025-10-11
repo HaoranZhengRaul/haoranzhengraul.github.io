@@ -571,6 +571,17 @@ body {
   color: var(--text-secondary);
 }
 
+.publication-title-link {
+  color: var(--text-primary);
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+.publication-title-link:hover {
+  color: var(--primary-color);
+  text-decoration: underline;
+}
+
 .publication-link {
   color: var(--primary-color);
   text-decoration: none;

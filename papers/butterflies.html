@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Do AIs Dream of Electric Butterflies? - Haoran Zheng</title>
+    <meta name="author" content="Haoran Zheng">
+    <meta name="description" content="A benchmark for evaluating consciousness-relevant traits in large language models through theory-grounded self-reports.">
+    <meta name="keywords" content="AI consciousness, LLMs, self-report, benchmark, ConsciousnessBench, cognitive science">
+    <link rel="canonical" href="https://haoranzhengraul.github.io/papers/butterflies.html">
+
+    <!-- Open Graph Metadata -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://haoranzhengraul.github.io/papers/butterflies.html">
+    <meta property="og:title" content="Do AIs Dream of Electric Butterflies? Benchmarking LLM Consciousness via Theory-Grounded Self-Reports">
+    <meta property="og:description" content="A benchmark for evaluating consciousness-relevant traits in large language models through theory-grounded self-reports.">
+    <meta property="og:image" content="https://haoranzhengraul.github.io/assets/thumbnail.jpg">
+
+    <!-- Twitter Card Metadata -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://haoranzhengraul.github.io/papers/butterflies.html">
+    <meta name="twitter:title" content="Do AIs Dream of Electric Butterflies? Benchmarking LLM Consciousness via Theory-Grounded Self-Reports">
+    <meta name="twitter:description" content="A benchmark for evaluating consciousness-relevant traits in large language models through theory-grounded self-reports.">
+    <meta name="twitter:image" content="https://haoranzhengraul.github.io/assets/thumbnail.jpg">
+    <meta name="twitter:creator" content="@HaoranZhengRaul">
+
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ScholarlyArticle",
+      "headline": "Do AIs Dream of Electric Butterflies? Benchmarking LLM Consciousness via Theory-Grounded Self-Reports",
+      "author": {
+        "@type": "Person",
+        "name": "Haoran Zheng",
+        "affiliation": {
+          "@type": "Organization",
+          "name": "The University of Chicago Booth School of Business"
+        }
+      },
+      "datePublished": "2025-10-07",
+      "description": "A benchmark for evaluating consciousness-relevant traits in large language models through theory-grounded self-reports.",
+      "keywords": "AI consciousness, LLMs, self-report, benchmark, ConsciousnessBench, cognitive science",
+      "url": "https://haoranzhengraul.github.io/papers/butterflies.html",
+      "sameAs": "https://doi.org/10.31234/osf.io/fqwp9_v1"
+    }
+    </script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        header {
+            margin-bottom: 30px;
+            border-bottom: 2px solid #e0e0e0;
+            padding-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 2em;
+            margin-bottom: 15px;
+            color: #1a1a1a;
+            line-height: 1.3;
+        }
+
+        .metadata {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            font-size: 0.95em;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .metadata-item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .metadata-item strong {
+            color: #333;
+        }
+
+        .abstract {
+            background-color: #f5f5f5;
+            padding: 20px;
+            border-radius: 6px;
+            margin: 30px 0;
+        }
+
+        .abstract h2 {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+            color: #1a1a1a;
+        }
+
+        .abstract p {
+            color: #444;
+        }
+
+        .pdf-container {
+            margin: 30px 0;
+        }
+
+        .pdf-container h2 {
+            font-size: 1.3em;
+            margin-bottom: 15px;
+            color: #1a1a1a;
+        }
+
+        embed {
+            width: 100%;
+            height: 700px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        .actions {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+            margin: 20px 0;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            font-size: 0.95em;
+        }
+
+        .btn-primary {
+            background-color: #0066cc;
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background-color: #0052a3;
+        }
+
+        .btn-secondary {
+            background-color: #f5f5f5;
+            color: #333;
+            border: 1px solid #ddd;
+        }
+
+        .btn-secondary:hover {
+            background-color: #e8e8e8;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-bottom: 20px;
+            color: #0066cc;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 2px solid #e0e0e0;
+            color: #666;
+            font-size: 0.9em;
+        }
+
+        footer a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 1.5em;
+            }
+
+            embed {
+                height: 500px;
+            }
+
+            .actions {
+                flex-direction: column;
+            }
+
+            .btn {
+                width: 100%;
+                justify-content: center;
+            }
+        }
+
+        /* Accessibility improvements */
+        a:focus, button:focus {
+            outline: 2px solid #0066cc;
+            outline-offset: 2px;
+        }
+
+        .visually-hidden {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            margin: -1px;
+            padding: 0;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="/" class="back-link" aria-label="Back to homepage">← Back to Home</a>
+
+        <main role="main">
+            <header>
+                <h1>Do AIs Dream of Electric Butterflies? Benchmarking LLM Consciousness via Theory-Grounded Self-Reports</h1>
+
+                <div class="metadata">
+                    <div class="metadata-item">
+                        <strong>Author:</strong> Haoran Zheng
+                    </div>
+                    <div class="metadata-item">
+                        <strong>Published:</strong> <time datetime="2025-10-07">October 7, 2025</time>
+                    </div>
+                </div>
+
+                <div class="actions">
+                    <a href="/papers/Do%20AIs%20Dream%20of%20Electric%20Butterflies%3F%20Benchmarking%20LLM%20Consciousness%20via%20Theory-Grounded%20Self-Reports.pdf" class="btn btn-primary" download aria-label="Download PDF">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                        Download PDF
+                    </a>
+                    <a href="https://osf.io/preprints/psyarxiv/fqwp9_v1" class="btn btn-secondary" target="_blank" rel="noopener noreferrer" aria-label="View on PsyArXiv (opens in new tab)">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                        View Preprint
+                    </a>
+                </div>
+            </header>
+
+            <section class="abstract" aria-labelledby="abstract-heading">
+                <h2 id="abstract-heading">Abstract</h2>
+                <p>
+                    Are state-of-the-art large language models conscious, or capable of anything like consciousness? We introduce ConsciousnessBench: the first systematic benchmark designed to empirically evaluate consciousness-relevant traits in frontier language models, grounded in 5 leading scientific theories. We assess 8 advanced models via 840 self-report responses, finding not only statistically robust performance differences, but—more importantly—evidence of distinct model cognitive profiles and engagement strategies with consciousness-related constructs. Our results reveal that some models demonstrate theoretical fluency, specialization in certain cognitive tasks, or even phenomenological exploration, while others default to deflection. While we cannot deliver a definitive verdict on AI consciousness, our findings show that consciousness-related capacities—and their computational diversity—are now empirically tractable, even if not yet empirically decidable.
+                </p>
+            </section>
+
+            <section class="pdf-container" aria-labelledby="pdf-heading">
+                <h2 id="pdf-heading">Paper Preview</h2>
+                <embed src="/papers/Do%20AIs%20Dream%20of%20Electric%20Butterflies%3F%20Benchmarking%20LLM%20Consciousness%20via%20Theory-Grounded%20Self-Reports.pdf" type="application/pdf" aria-label="PDF preview of the research paper" />
+                <p style="margin-top: 10px; color: #666; font-size: 0.9em;">
+                    If the PDF preview doesn't load, please use the download button above.
+                </p>
+            </section>
+        </main>
+
+        <footer role="contentinfo">
+            <p><strong>DOI:</strong> <a href="https://doi.org/10.31234/osf.io/fqwp9_v1" target="_blank" rel="noopener noreferrer">10.31234/osf.io/fqwp9_v1</a></p>
+            <p><strong>Publication Date:</strong> <time datetime="2025-10-07">October 7, 2025</time></p>
+            <p style="margin-top: 15px;">&copy; 2025 Haoran Zheng. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
