@@ -357,6 +357,8 @@ body {
   box-shadow: var(--shadow-large);
   display: block;
   max-width: 100%;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
 }
 
 /* Specific positioning for the formal suit photo */
