@@ -358,7 +358,8 @@ body {
   display: block;
   max-width: 100%;
   image-rendering: -webkit-optimize-contrast;
-  image-rendering: crisp-edges;
+  image-rendering: high-quality;
+  -ms-interpolation-mode: bicubic;
 }
 
 /* Specific positioning for the formal suit photo */
