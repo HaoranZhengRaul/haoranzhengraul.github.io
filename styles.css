@@ -361,7 +361,7 @@ body {
 
 /* Specific positioning for the formal suit photo */
 .profile-image.formal-suit {
-  object-position: center 20%;
+  object-position: center 0%;
 }
 
 /* Inline Links */
