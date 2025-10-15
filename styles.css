@@ -944,8 +944,8 @@ body {
   }
   
   .image-container {
-    width: 280px;
-    height: 280px;
+    width: 200px;
+    height: 200px;
     margin: 0 auto;
     position: relative;
   }
@@ -1038,7 +1038,7 @@ body {
   }
   
   .image-container {
-    width: 280px;
-    height: 280px;
+    width: 180px;
+    height: 180px;
   }
 }
