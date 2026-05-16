@@ -257,7 +257,7 @@ body {
   font-size: var(--font-size-5xl);
   font-weight: 700;
   color: var(--text-primary);
-  margin-top: var(--spacing-6);
+  margin-top: var(--spacing-1);
   margin-bottom: var(--spacing-4);
 }
 
@@ -1174,5 +1174,9 @@ body {
 }
 
 .hero-image {
-  margin-top: 9.4rem;
+  margin-top: 8.15rem;
+}
+
+.work-para {
+  margin-bottom: var(--spacing-10);
 }
