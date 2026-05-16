@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>When to Think Fast and Slow? AMOR: Adaptive Entropy Gate for Hybrid Models - Haoran Zheng</title>
+    <meta name="author" content="Haoran Zheng">
+    <meta name="description" content="AMOR: a hybrid architecture that gates attention by predictive entropy, invoking attention only when the model is uncertain — adaptive System 1 / System 2 routing for sequence models.">
+    <meta name="keywords" content="neuromorphic computing, hybrid architecture, recurrent models, attention, Mamba, Gated DeltaNet, entropy gating, System 1 System 2, AMOR, sequence models, language models">
+    <link rel="canonical" href="https://haoranzhengraul.github.io/papers/amor.html">
+
+    <!-- Open Graph Metadata -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://haoranzhengraul.github.io/papers/amor.html">
+    <meta property="og:title" content="When to Think Fast and Slow? AMOR: Adaptive Entropy Gate for Hybrid Models">
+    <meta property="og:description" content="A hybrid architecture that gates attention by predictive entropy — adaptive System 1 / System 2 routing for sequence models.">
+    <meta property="og:image" content="https://haoranzhengraul.github.io/assets/IMG/thumbnail.jpg">
+    <meta property="og:image:width" content="1135">
+    <meta property="og:image:height" content="639">
+    <meta property="og:image:type" content="image/jpeg">
+
+    <!-- Twitter Card Metadata -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://haoranzhengraul.github.io/papers/amor.html">
+    <meta name="twitter:title" content="When to Think Fast and Slow? AMOR: Adaptive Entropy Gate for Hybrid Models">
+    <meta name="twitter:description" content="A hybrid architecture that gates attention by predictive entropy — adaptive System 1 / System 2 routing for sequence models.">
+    <meta name="twitter:image" content="https://haoranzhengraul.github.io/assets/IMG/thumbnail.jpg">
+    <meta name="twitter:image:alt" content="AMOR: Adaptive Entropy Gate for Hybrid Models">
+    <meta name="twitter:creator" content="@HaoranZhengRaul">
+
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ScholarlyArticle",
+      "headline": "When to Think Fast and Slow? AMOR: Adaptive Entropy Gate for Hybrid Models",
+      "author": [
+        {
+          "@type": "Person",
+          "name": "Haoran Zheng",
+          "affiliation": {
+            "@type": "Organization",
+            "name": "The University of Chicago"
+          }
+        },
+        {
+          "@type": "Person",
+          "name": "Chen Shani",
+          "affiliation": {
+            "@type": "Organization",
+            "name": "Stanford University"
+          }
+        }
+      ],
+      "datePublished": "2026-05-12",
+      "description": "AMOR: a hybrid architecture that gates attention by predictive entropy, invoking attention only when the model is uncertain — adaptive System 1 / System 2 routing for sequence models.",
+      "keywords": "neuromorphic computing, hybrid architecture, recurrent models, attention, Mamba, entropy gating, System 1 System 2, AMOR, sequence models",
+      "url": "https://haoranzhengraul.github.io/papers/amor.html",
+      "sameAs": "https://arxiv.org/abs/2602.13215"
+    }
+    </script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        header {
+            margin-bottom: 30px;
+            border-bottom: 2px solid #e0e0e0;
+            padding-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 2em;
+            margin-bottom: 15px;
+            color: #1a1a1a;
+            line-height: 1.3;
+        }
+
+        .metadata {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            font-size: 0.95em;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .metadata-item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .metadata-item strong {
+            color: #333;
+        }
+
+        .abstract {
+            background-color: #f5f5f5;
+            padding: 20px;
+            border-radius: 6px;
+            margin: 30px 0;
+        }
+
+        .abstract h2 {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+            color: #1a1a1a;
+        }
+
+        .abstract p {
+            color: #444;
+        }
+
+        .abstract p + p {
+            margin-top: 12px;
+        }
+
+        .pdf-container {
+            margin: 30px 0;
+        }
+
+        .pdf-container h2 {
+            font-size: 1.3em;
+            margin-bottom: 15px;
+            color: #1a1a1a;
+        }
+
+        embed {
+            width: 100%;
+            height: 700px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        .actions {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+            margin: 20px 0;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            font-size: 0.95em;
+        }
+
+        .btn-primary {
+            background-color: #0066cc;
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background-color: #0052a3;
+        }
+
+        .btn-secondary {
+            background-color: #f5f5f5;
+            color: #333;
+            border: 1px solid #ddd;
+        }
+
+        .btn-secondary:hover {
+            background-color: #e8e8e8;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-bottom: 20px;
+            color: #0066cc;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 2px solid #e0e0e0;
+            color: #666;
+            font-size: 0.9em;
+        }
+
+        footer a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 1.5em;
+            }
+
+            embed {
+                height: 500px;
+            }
+
+            .actions {
+                flex-direction: column;
+            }
+
+            .btn {
+                width: 100%;
+                justify-content: center;
+            }
+        }
+
+        /* Accessibility improvements */
+        a:focus, button:focus {
+            outline: 2px solid #0066cc;
+            outline-offset: 2px;
+        }
+
+        .visually-hidden {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            margin: -1px;
+            padding: 0;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="/" class="back-link" aria-label="Back to homepage">← Back to Home</a>
+
+        <main role="main">
+            <header>
+                <h1>When to Think Fast and Slow? AMOR: Adaptive Entropy Gate for Hybrid Models</h1>
+
+                <div class="metadata">
+                    <div class="metadata-item">
+                        <strong>Authors:</strong> Haoran Zheng, Chen Shani
+                    </div>
+                    <div class="metadata-item">
+                        <strong>Published:</strong> <time datetime="2026-05-12">May 12, 2026</time>
+                    </div>
+                </div>
+
+                <div class="actions">
+                    <a href="/papers/When-to-Think-Fast-and-Slow-AMOR-Adaptive-Entropy-Gate-for-Hybrid-Models.pdf" class="btn btn-primary" download aria-label="Download PDF">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                        Download PDF
+                    </a>
+                    <a href="https://arxiv.org/abs/2602.13215" class="btn btn-secondary" target="_blank" rel="noopener noreferrer" aria-label="View on arXiv (opens in new tab)">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                        View Preprint
+                    </a>
+                </div>
+            </header>
+
+            <section class="abstract" aria-labelledby="abstract-heading">
+                <h2 id="abstract-heading">Abstract</h2>
+                <p>
+                    Recurrent-attention hybrids aim to combine the efficiency of recurrence with the expressivity of attention, but existing approaches typically apply attention uniformly across all positions, even when the recurrent state alone is sufficient for accurate prediction.
+                </p>
+                <p>
+                    We introduce AMOR (<em>Adaptive Metacognitive Output Router</em>), a post-hoc hybrid architecture that selectively invokes attention based on predictive uncertainty. A recurrent backbone is augmented with entropy-gated attention blocks that activate only when the model's output entropy exceeds a dynamic threshold derived from a running batch median and scaled standard deviation. This yields a simple, gradient-free routing mechanism inspired by uncertainty-driven computation and the System 1 / System 2 distinction.
+                </p>
+                <p>
+                    Across Mamba2 and Gated DeltaNet backbones (180M&ndash;1.5B), AMOR consistently matches or outperforms both pure recurrent models and fixed-schedule hybrid baselines while invoking attention on only ~22% of tokens. It achieves strong performance on common-sense reasoning benchmarks and maintains stable long-context performance on LongBench, where prior hybrid models degrade under distribution shift.
+                </p>
+                <p>
+                    These results suggest that <em>when</em> attention is applied matters as much as <em>how much</em>: selectively allocating attention based on predictive uncertainty improves both efficiency and robustness, offering a simple alternative to uniform or fixed routing strategies and pointing toward adaptive hybrid architectures that dynamically match computation to input difficulty.
+                </p>
+            </section>
+
+            <section class="pdf-container" aria-labelledby="pdf-heading">
+                <h2 id="pdf-heading">Paper Preview</h2>
+                <embed src="/papers/When-to-Think-Fast-and-Slow-AMOR-Adaptive-Entropy-Gate-for-Hybrid-Models.pdf" type="application/pdf" aria-label="PDF preview of the research paper" />
+                <p style="margin-top: 10px; color: #666; font-size: 0.9em;">
+                    If the PDF preview doesn't load, please use the download button above.
+                </p>
+            </section>
+        </main>
+
+        <footer role="contentinfo">
+            <p><strong>arXiv:</strong> <a href="https://arxiv.org/abs/2602.13215" target="_blank" rel="noopener noreferrer">2602.13215</a></p>
+            <p><strong>Publication Date:</strong> <time datetime="2026-05-12">May 12, 2026</time></p>
+            <p style="margin-top: 15px;">&copy; 2026 Haoran Zheng. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
