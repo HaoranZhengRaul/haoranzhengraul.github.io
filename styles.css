@@ -887,8 +887,8 @@ body {
     top: 70px;
     left: 0;
     right: 0;
-    background-color: var(--background-color);
-    border-bottom: 1px solid var(--border-color);
+    background-color: #1e40af;
+    border-bottom: none;
     padding: var(--spacing-6);
     flex-direction: column;
     align-items: flex-start;
@@ -1169,12 +1169,15 @@ body {
   animation: fadeInUp 0.6s ease-out 0.4s both;
 }
 
-.hero-content {
-  align-items: start;
-}
+/* Desktop only -- mobile keeps its own hero-image spacing */
+@media (min-width: 769px) {
+  .hero-content {
+    align-items: start;
+  }
 
-.hero-image {
-  margin-top: 8.15rem;
+  .hero-image {
+    margin-top: 8.15rem;
+  }
 }
 
 .work-para {
