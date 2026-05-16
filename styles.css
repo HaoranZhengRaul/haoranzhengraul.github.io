@@ -1241,3 +1241,10 @@ body {
 .mobile-menu-toggle span {
   background-color: #fff;
 }
+
+/* Center "AI Researcher" + social icons on mobile */
+@media (max-width: 768px) {
+  .hero-subtitle-row {
+    justify-content: center;
+  }
+}
