@@ -1186,3 +1186,55 @@ body {
   font-size: var(--font-size-base);
   color: var(--text-muted);
 }
+
+/* AMOR turns red with a heart when its publication card or title is hovered */
+.amor-word {
+  transition: color var(--transition-fast);
+}
+
+.publication-item:hover .amor-word {
+  color: #e11d48;
+}
+
+.publication-item:hover .amor-word::after {
+  content: " \2665";
+}
+
+/* Nav bar -- darker blue with white text */
+.nav {
+  background-color: #1e40af;
+  border-bottom: none;
+}
+
+[data-theme="dark"] .nav {
+  background-color: #1e40af;
+}
+
+.nav-brand .nav-name {
+  color: #fff;
+}
+
+.nav-link {
+  color: #fff;
+}
+
+.nav-link:hover {
+  color: #fff;
+}
+
+.nav-link::after {
+  background-color: #fff;
+}
+
+.theme-toggle .sun-icon,
+.theme-toggle .moon-icon {
+  color: #fff;
+}
+
+.theme-toggle:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+.mobile-menu-toggle span {
+  background-color: #fff;
+}
