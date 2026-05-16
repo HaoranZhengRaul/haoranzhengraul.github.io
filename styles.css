@@ -1180,3 +1180,9 @@ body {
 .work-para {
   margin-bottom: var(--spacing-10);
 }
+
+.gloss {
+  font-style: italic;
+  font-size: var(--font-size-base);
+  color: var(--text-muted);
+}
