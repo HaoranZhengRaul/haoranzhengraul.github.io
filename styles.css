@@ -348,6 +348,10 @@ body {
   overflow: hidden;
 }
 
+.flip-front {
+  border: 4px solid var(--primary-color);
+}
+
 .profile-image {
   width: 100%;
   height: 100%;
