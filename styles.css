@@ -376,6 +376,10 @@ body {
   border-radius: 0;
 }
 
+.profile-image.sue-photo {
+  object-position: 52% 50%;
+}
+
 /* Specific positioning for the formal suit photo */
 .profile-image.formal-suit {
   object-position: center -10%;
