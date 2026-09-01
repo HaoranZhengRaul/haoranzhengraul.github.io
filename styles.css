@@ -377,7 +377,10 @@ body {
 }
 
 .profile-image.sue-photo {
-  object-position: 52% 46%;
+  width: 96%;
+  height: 96%;
+  margin: 2%;
+  object-position: 48% 46%;
 }
 
 /* Specific positioning for the formal suit photo */
