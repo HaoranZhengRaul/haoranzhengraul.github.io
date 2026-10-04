@@ -295,16 +295,16 @@
             <section class="abstract" aria-labelledby="abstract-heading">
                 <h2 id="abstract-heading">Abstract</h2>
                 <p>
-                    Recurrent-attention hybrids aim to combine the efficiency of recurrence with the expressivity of attention, but existing approaches typically apply attention uniformly across all positions, even when the recurrent state alone is sufficient for accurate prediction.
+                    Recurrent-attention hybrids aim to combine the efficiency of recurrence with the contextual recall of attention, but existing approaches typically apply attention uniformly across all positions, even when the recurrent state alone is sufficient for accurate prediction.
                 </p>
                 <p>
-                    We introduce AMOR (<em>Adaptive Metacognitive Output Router</em>), a post-hoc hybrid architecture that selectively invokes attention based on predictive uncertainty. A recurrent backbone is augmented with entropy-gated attention blocks that activate only when the model's output entropy exceeds a dynamic threshold derived from a running batch median and scaled standard deviation. This yields a simple, gradient-free routing mechanism inspired by uncertainty-driven computation and the System 1 / System 2 distinction.
+                    We introduce AMOR (<em>Adaptive Metacognitive Output Router</em>), a post-hoc hybrid architecture that selectively invokes attention based on predictive uncertainty. A recurrent backbone is augmented with entropy-gated attention blocks that activate only when the model's output entropy exceeds a dynamic threshold derived from a running batch median and scaled standard deviation. The resulting binary gate requires no learned routing parameters.
                 </p>
                 <p>
-                    Across Mamba2 and Gated DeltaNet backbones (180M&ndash;1.5B), AMOR consistently matches or outperforms both pure recurrent models and fixed-schedule hybrid baselines while invoking attention on only ~22% of tokens. It achieves strong performance on common-sense reasoning benchmarks and maintains stable long-context performance on LongBench, where prior hybrid models degrade under distribution shift.
+                    Pretrained from scratch on FineWeb-Edu and with attention invoked on only ~40% of positions, one of the AMOR variants (Mamba2 or Gated DeltaNet backbones) achieves the highest eight-task common-sense reasoning average at each scale among pure recurrent, pure attention, and fixed-schedule hybrid models. AMOR also improves retrieval performance over pure recurrent models while remaining competitive against fixed-schedule hybrids. Additionally, AMOR retains the long-context robustness of its recurrent backbones, where the Transformer and other hybrid architectures degrade under distribution shift.
                 </p>
                 <p>
-                    These results suggest that <em>when</em> attention is applied matters as much as <em>how much</em>: selectively allocating attention based on predictive uncertainty improves both efficiency and robustness, offering a simple alternative to uniform or fixed routing strategies and pointing toward adaptive hybrid architectures that dynamically match computation to input difficulty.
+                    These results suggest that <em>when</em> attention is applied matters as much as <em>how much</em>: selectively allocating attention based on predictive uncertainty improves accuracy, robustness, and efficiency, offering a simple alternative to uniform or fixed routing strategies.
                 </p>
             </section>
 
