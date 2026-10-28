@@ -300,24 +300,36 @@ const debouncedScrollHandler = debounce(updateActiveNavLinkOnScroll, 10);
 window.removeEventListener('scroll', updateActiveNavLinkOnScroll);
 window.addEventListener('scroll', debouncedScrollHandler);
 
-// Hover cards (AMOR, Conceptizer, ...): shift each card sideways so it stays inside the text column
+// Hover cards (AMOR, Conceptizer, ...): shift each card sideways so it stays inside the text column.
+// Placed on load, after fonts, on resize and again on hover, so a card never slides on its first showing.
 document.addEventListener('DOMContentLoaded', function() {
-    document.querySelectorAll('.tip-wrap').forEach(function(wrap) {
+    const wraps = Array.from(document.querySelectorAll('.tip-wrap'));
+    function place(wrap) {
         const box = wrap.querySelector('.tip-box');
         if (!box) return;
-        function place() {
-            const area = (wrap.closest('.hero-text') || document.body).getBoundingClientRect();
-            const minLeft = Math.max(area.left, 8);
-            const maxRight = Math.min(area.right, window.innerWidth - 8);
-            const w = wrap.getBoundingClientRect();
-            const width = box.offsetWidth;
-            const left = w.left + w.width / 2 - width / 2;
-            let shift = 0;
-            if (left + width > maxRight) shift = maxRight - (left + width);
-            if (left + shift < minLeft) shift = minLeft - left;
-            box.style.setProperty('--tip-shift', shift + 'px');
-        }
-        wrap.addEventListener('mouseenter', place);
-        wrap.addEventListener('focusin', place);
+        const area = (wrap.closest('.hero-text') || document.body).getBoundingClientRect();
+        const minLeft = Math.max(area.left, 8);
+        const maxRight = Math.min(area.right, window.innerWidth - 8);
+        const w = wrap.getBoundingClientRect();
+        const width = box.offsetWidth;
+        const left = w.left + w.width / 2 - width / 2;
+        let shift = 0;
+        if (left + width > maxRight) shift = maxRight - (left + width);
+        if (left + shift < minLeft) shift = minLeft - left;
+        box.style.setProperty('--tip-shift', shift + 'px');
+    }
+    function placeAll() {
+        wraps.forEach(place);
+    }
+    wraps.forEach(function(wrap) {
+        wrap.addEventListener('mouseenter', function() { place(wrap); });
+        wrap.addEventListener('focusin', function() { place(wrap); });
+    });
+    placeAll();
+    if (document.fonts && document.fonts.ready) document.fonts.ready.then(placeAll);
+    let resizeTimer;
+    window.addEventListener('resize', function() {
+        clearTimeout(resizeTimer);
+        resizeTimer = setTimeout(placeAll, 100);
     });
 });

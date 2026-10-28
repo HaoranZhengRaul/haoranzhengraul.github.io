@@ -1252,9 +1252,9 @@ body {
   left: 50%;
   width: min(300px, 80vw);
   padding: var(--spacing-3) var(--spacing-4);
-  border: 1px solid #fecdd3;
+  border: 1.5px solid var(--tip-color);
   border-radius: var(--radius-lg);
-  background: #fff1f2;
+  background: var(--tip-bg);
   box-shadow: var(--shadow-medium);
   color: var(--text-secondary);
   font-size: var(--font-size-sm);
@@ -1276,38 +1276,32 @@ body {
   left: calc(50% - var(--tip-shift, 0px));
   margin-left: -6px;
   border: 6px solid transparent;
-  border-top-color: #fecdd3;
+  border-top-color: var(--tip-color);
+}
+
+/* Each card in its paper's colour: AMOR red, Conceptizer orange, SCENE magenta, ConsciousnessBench sky blue */
+#tip-amor {
+  --tip-color: #e11d48;
+  --tip-bg: #fff1f2;
 }
 
 #tip-conceptizer {
-  border-color: #fde68a;
-  background: #fffbeb;
-}
-
-#tip-conceptizer::after {
-  border-top-color: #fde68a;
+  --tip-color: #ea580c;
+  --tip-bg: #fff7ed;
 }
 
 #tip-scene {
-  border-color: #f5d0fe;
-  background: #fdf4ff;
-}
-
-#tip-scene::after {
-  border-top-color: #f5d0fe;
+  --tip-color: #c026d3;
+  --tip-bg: #fdf4ff;
 }
 
 #tip-butterflies {
-  border-color: #bae6fd;
-  background: #f0f9ff;
-}
-
-#tip-butterflies::after {
-  border-top-color: #bae6fd;
+  --tip-color: #0284c7;
+  --tip-bg: #f0f9ff;
 }
 
 .tip-box strong {
-  color: var(--text-primary);
+  color: var(--tip-color);
 }
 
 /* Cards paint above the photo column */
@@ -1321,16 +1315,8 @@ body {
 }
 
 .tip-star {
-  color: #f59e0b;
+  color: var(--tip-color);
   margin-right: var(--spacing-2);
-}
-
-.tip-star.tip-heart {
-  color: #e11d48;
-}
-
-.tip-star.tip-exchange {
-  color: #c026d3;
 }
 
 .tip-wrap:hover .tip-box,
@@ -1529,6 +1515,15 @@ body {
 
 /* Desktop: tighter vertical rhythm so the whole hero fits one laptop screen */
 @media (min-width: 769px) {
+  /* 840px lets "AMOR and Conceptizer" share a line */
+  .hero-content {
+    gap: var(--spacing-12);
+  }
+
+  .hero-text {
+    max-width: 840px;
+  }
+
   .hero {
     padding-top: 76px;
     padding-bottom: var(--spacing-8);
