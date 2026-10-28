@@ -7,6 +7,38 @@
     <priority>1.0</priority>
   </url>
 
+  <!-- Conceptizer Paper - HTML -->
+  <url>
+    <loc>https://haoranzhengraul.github.io/papers/conceptizer.html</loc>
+    <lastmod>2026-10-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Conceptizer Paper - PDF -->
+  <url>
+    <loc>https://haoranzhengraul.github.io/papers/Conceptizer-Next-Token-Prediction-Is-Not-All-You-Need.pdf</loc>
+    <lastmod>2026-10-27</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- AMOR Paper - HTML -->
+  <url>
+    <loc>https://haoranzhengraul.github.io/papers/amor.html</loc>
+    <lastmod>2026-10-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- AMOR Paper - PDF -->
+  <url>
+    <loc>https://haoranzhengraul.github.io/papers/When-to-Think-Fast-and-Slow-AMOR-Adaptive-Entropy-Gate-for-Hybrid-Models.pdf</loc>
+    <lastmod>2026-10-27</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
   <!-- Butterflies Paper - HTML -->
   <url>
     <loc>https://haoranzhengraul.github.io/papers/butterflies.html</loc>

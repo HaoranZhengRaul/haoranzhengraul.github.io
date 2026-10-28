@@ -93,21 +93,22 @@
                         </div>
                     </div>
                     <p class="hero-description">
-                        Current <span class="highlight-blue">Pre-doc Fellow at The University of Chicago Booth</span> in <span class="highlight-blue">Quantitative Marketing</span> with <a href="https://www.chicagobooth.edu/faculty/directory/k/andreas-kraft" target="_blank" class="inline-link">Prof. Andreas Kraft</a>. I'm applying to PhD programs in Computer Science or Marketing this cycle!
+                        Current <span class="highlight-blue">Pre-doc Fellow at The University of Chicago Booth</span> in <span class="highlight-blue">Quantitative Marketing</span> with <a href="https://www.chicagobooth.edu/faculty/directory/k/andreas-kraft" target="_blank" class="inline-link">Prof. Andreas Kraft</a>. I'm applying to PhD programs in CS, Marketing, or Psychology/Cog Sci this cycle!
                     </p>
                     <div class="principles-box">
                         <p class="principles-box-title">What guides my research</p>
                         <div class="principle-item">
-                            <span class="principle-marker">1</span>
-                            <p><strong>Information</strong> &mdash; bits, not atoms &mdash; is the fundamental building block of the universe.</p>
-                        </div>
-                        <div class="principle-item">
-                            <span class="principle-marker">2</span>
+                            <i data-lucide="brain" class="principle-icon" aria-hidden="true"></i>
                             <p class="principle-emphasis">No two intelligences are exactly alike, but they do often rhyme.</p>
+                            <i data-lucide="bot" class="principle-icon" aria-hidden="true"></i>
                         </div>
                     </div>
                     <p class="hero-description work-para">
-                        My work spans <a href="/papers/amor.html" class="bold-link">Neuromorphic Computing</a> <span class="gloss">(improving language models by drawing inspiration from human cognition)</span>, <a href="/papers/butterflies.html" class="casual-link">AI Consciousness</a>, and <a href="/papers/scene.html" class="casual-link">AI Interpretability</a>. Most recently, I designed <a href="https://arxiv.org/abs/2602.13215" target="_blank" class="amor-link">AMOR</a>, a hybrid architecture inspired by Daniel Kahneman's <em>Thinking, Fast and Slow</em> &mdash; appending a few slow, deliberate attention layers gated by the model entropy to a fast, intuitive recurrent model (advised by <a href="https://sites.google.com/mail.huji.ac.il/dr-chen-shani?usp=sharing" target="_blank" class="bold-link">Dr. Chen Shani &ndash; Stanford</a>). More on my <a href="https://scholar.google.com/citations?user=t8z21IQAAAAJ&hl=en" target="_blank" class="bold-link">Google Scholar</a>.
+                        My work focuses on <span class="highlight-blue focus-phrase">improving language models by drawing inspiration from human cognition</span>, and on how language models, in turn, shape the way humans perceive the world. It started in <a href="/papers/scene.html" class="casual-link scene-link">AI Interpretability</a> and <a href="/papers/butterflies.html" class="casual-link butterfly-link">AI Consciousness</a>. Most recently, I designed
+                        <span class="tip-wrap"><a href="https://arxiv.org/abs/2602.13215" target="_blank" class="amor-link" aria-describedby="tip-amor">AMOR</a><span class="tip-box" id="tip-amor" role="tooltip"><span class="tip-star tip-heart" aria-hidden="true">&#9829;</span>A hybrid architecture inspired by Daniel Kahneman's <em>Thinking, Fast and Slow</em> &mdash; appending a few slow, deliberate attention layers gated by the model entropy to a fast, intuitive recurrent model.</span></span>
+                        and
+                        <span class="tip-wrap"><a href="https://arxiv.org/abs/2610.33027" target="_blank" class="conceptizer-link" aria-describedby="tip-conceptizer">Conceptizer</a><span class="tip-box" id="tip-conceptizer" role="tooltip"><span class="tip-star" aria-hidden="true">&#9733;</span>A training framework that extends next-token prediction with a reward for meaning &mdash; so language models learn to predict meaning, not just the next token.</span></span>
+                        (advised by <a href="https://sites.google.com/mail.huji.ac.il/dr-chen-shani?usp=sharing" target="_blank" class="inline-link">Dr. Chen Shani &ndash; Stanford</a>). More on my <a href="https://scholar.google.com/citations?user=t8z21IQAAAAJ&hl=en" target="_blank" class="bold-link">Google Scholar</a>.
                     </p>
                     <p class="hero-description">
                         In past lives, I did my Master's in Data Science at The University of Chicago (GPA 4.0), triple-majored in Economics, Finance, and History at The Ohio State University (<a href="https://fisher.osu.edu/about/awards/pace-setters" target="_blank" class="text-link">top 1% Honors</a>), worked as a research assistant in Behavioral Science (<a href="https://scholar.google.com/citations?user=4BpUtrQAAAAJ&hl=en" target="_blank" class="casual-link">Dr. Nick Epley &ndash; UChicago</a>) and in History (<a href="https://history.osu.edu/people/reed.434" target="_blank" class="casual-link">Dr. Christopher A. Reed &ndash; OSU</a>), served as a finance analyst at NASDAQ-listed <a href="https://www.nasdaq.com/market-activity/stocks/caas" target="_blank" class="text-link">CAAS Inc.</a>, and taught Statistics at Ohio State.
@@ -124,11 +125,14 @@
                     </div>
                 </div>
                 <div class="hero-image">
-                    <div class="image-container flip-container">
+                    <div class="image-container flip-container photo-rect">
                         <div class="flip-inner">
                             <div class="flip-front">
+                                <img src="./assets/IMG/palmer-house.jpg" alt="Haoran Zheng in the Palmer House lobby, Chicago" class="profile-image palmer-photo" fetchpriority="high" decoding="async">
+                                <!-- Headline photo pool (one-line swaps):
                                 <img src="./assets/IMG/thumbnail.jpg" alt="Haoran Zheng outdoors by a mountain river" class="profile-image outdoor-photo" fetchpriority="high" decoding="async">
-                                <!-- SUE alternative (one-line swap): <img src="./assets/IMG/sue.jpeg" alt="Haoran Zheng with SUE the T. rex" class="profile-image sue-photo"> -->
+                                <img src="./assets/IMG/sue.jpeg" alt="Haoran Zheng with SUE the T. rex" class="profile-image sue-photo">
+                                -->
                             </div>
                             <div class="flip-back">
                                 <img src="./assets/IMG/suit.jpeg" alt="Haoran Zheng in a blue suit" class="profile-image formal-suit" decoding="async">
@@ -147,6 +151,18 @@
             <div class="publications">
                 <div class="publication-item">
                     <div class="publication-content">
+                        <h4><a href="https://arxiv.org/abs/2610.33027" class="publication-title-link" target="_blank" rel="noopener noreferrer">"<span class="conceptizer-word">Conceptizer</span>: Next-Token Prediction Is Not All You Need"</a></h4>
+                        <p class="publication-meta">2026 • First Author</p>
+                        <p class="publication-description">
+                            A training framework that extends next-token prediction with a reward for meaning.
+                        </p>
+                    </div>
+                    <a href="/papers/conceptizer.html" class="publication-link">
+                        <i data-lucide="external-link"></i>
+                    </a>
+                </div>
+                <div class="publication-item">
+                    <div class="publication-content">
                         <h4><a href="https://arxiv.org/abs/2602.13215" class="publication-title-link" target="_blank" rel="noopener noreferrer">"When to Think Fast and Slow? <span class="amor-word">AMOR</span>: Adaptive Entropy Gate for Hybrid Models"</a></h4>
                         <p class="publication-meta">2026 • First Author</p>
                         <p class="publication-description">
@@ -159,7 +175,7 @@
                 </div>
                 <div class="publication-item">
                     <div class="publication-content">
-                        <h4><a href="https://osf.io/preprints/psyarxiv/fqwp9_v1" class="publication-title-link" target="_blank" rel="noopener noreferrer">"Do AIs Dream of Electric Butterflies? Benchmarking LLM Consciousness via Theory-Grounded Self-Reports"</a></h4>
+                        <h4><a href="https://osf.io/preprints/psyarxiv/fqwp9_v1" class="publication-title-link" target="_blank" rel="noopener noreferrer">"Do AIs Dream of <span class="butterfly-word">Electric Butterflies</span>? Benchmarking LLM Consciousness via Theory-Grounded Self-Reports"</a></h4>
                         <p class="publication-meta">2025 • First Author</p>
                         <p class="publication-description">
                             ConsciousnessBench: The first benchmark to empirically evaluate consciousness-relevant traits in frontier AI models.
@@ -171,7 +187,7 @@
                 </div>
                 <div class="publication-item">
                     <div class="publication-content">
-                        <h4><a href="https://arxiv.org/abs/2408.04575" class="publication-title-link" target="_blank" rel="noopener noreferrer">"SCENE: Evaluating Explainable AI Techniques Using Soft Counterfactuals"</a></h4>
+                        <h4><a href="https://arxiv.org/abs/2408.04575" class="publication-title-link" target="_blank" rel="noopener noreferrer">"<span class="scene-word">SCENE</span>: Evaluating Explainable AI Techniques Using Soft Counterfactuals"</a></h4>
                         <p class="publication-meta">2024 • First Author</p>
                         <p class="publication-description">
                             SCENE: A novel empirical evaluation framework for explainable AI techniques in NLP tasks.
