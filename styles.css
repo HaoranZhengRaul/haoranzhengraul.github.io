@@ -1811,6 +1811,37 @@ body {
   pointer-events: none;                 /* clicks go to the side you see */
 }
 
+/* The side turning away is also hidden at the flip's midpoint, when it is edge-on: Safari shows a turned-away side
+   whose contents are animated or layered (the hero's paragraphs), mirrored, through the one in front, whatever
+   backface-visibility says. Same for the photo. */
+.hero-face-front,
+.hero-face-back {
+  transition: visibility 0s linear 0.35s;     /* half of the 0.7s turn */
+}
+
+.hero-face-back,
+.hero-flip.show-back .hero-face-front {
+  visibility: hidden;
+}
+
+.hero-flip.show-back .hero-face-back {
+  visibility: visible;
+}
+
+.flip-front,
+.flip-back {
+  transition: visibility 0s linear 0.4s;      /* half of the photo's 0.8s turn */
+}
+
+.flip-back,
+.flip-container.show-back .flip-front {
+  visibility: hidden;
+}
+
+.flip-container.show-back .flip-back {
+  visibility: visible;
+}
+
 .research-figure {
   display: block;
   width: 100%;
