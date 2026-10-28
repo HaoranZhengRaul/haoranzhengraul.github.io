@@ -64,7 +64,7 @@
   --ai:        #C2378E; --ai-ink:        #C2378E; --ai-bg:        #F9EBF4; --ai-on:        #FFFFFF;  /* CS / AI: AMOR, Conceptizer, Dr. Shani */
   --predoc:    #6B43B0; --predoc-ink:    #6B43B0; --predoc-bg:    #F0ECF7; --predoc-on:    #FFFFFF;  /* marketing: the Booth pre-doc, Dr. Kraft */
   --teaching:  #D95D5D; --teaching-ink:  #B84F4F; --teaching-bg:  #FBEFEF; --teaching-on:  #FFFFFF;  /* teaching */
-  --papers:    #F4876D; --papers-ink:    #E2694C; --papers-bg:    #FEF3F0; --papers-on:    #263340;  /* the publications */
+  --papers:    #F4876D; --papers-ink:    #E2694C; --papers-bg:    #FEF3F0; --papers-on:    #263340;  /* the figure's papers panel */
   --neutral:   #9AA5B1; --neutral-ink:   #46525E; --neutral-bg:   #F5F6F8; --neutral-on:   #263340;  /* research positions */
   --hub:       #1B7880; --hub-ink:       #1B7880;                                                     /* the question */
   --bronze:    #8A6A2C; --bronze-ink:    #8A6A2C;                                                     /* the figure's title */
@@ -548,9 +548,8 @@ body {
   border-radius: var(--radius-full);
 }
 
-/* Each section's heading in its colour: publications the figure's coral, education the master's blue, experience
-   the figure title's bronze; contact keeps the site's own */
-.research { --section-color: var(--papers); --section-ink: var(--papers-ink); }
+/* Education's heading in the master's blue, experience's in the figure title's bronze; publications and contact
+   keep the site's own */
 .education { --section-color: var(--masters); --section-ink: var(--masters-ink); }
 .experience { --section-color: var(--bronze); --section-ink: var(--bronze-ink); }
 
@@ -1598,14 +1597,10 @@ body {
   border-bottom-color: var(--c);
 }
 
-/* Publications: at rest the section's coral bar; on hover the whole card turns its paper's colour */
-.publication-item {
-  border-left-color: var(--papers);
-}
-
+/* Publications: at rest the site's blue bar; on hover the whole card turns its paper's colour */
 .publication-item:hover {
-  border-color: var(--c, var(--papers));
-  border-left-color: var(--c, var(--papers));
+  border-color: var(--c, var(--primary-color));
+  border-left-color: var(--c, var(--primary-color));
   background-color: var(--c-bg, var(--card-background));
 }
 
