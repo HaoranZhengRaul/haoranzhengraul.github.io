@@ -1787,23 +1787,36 @@ body {
 
 .hero-flip-inner {
   position: relative;
-  transform-style: preserve-3d;
-  transition: transform 0.7s ease-in-out;
-}
-
-.hero-face {
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
 }
 
 .hero-face-back {                       /* the text sets the height; the map fits inside it */
   position: absolute;
   inset: 0;
-  transform: rotateY(180deg);
 }
 
-.hero-flip.show-back .hero-flip-inner {
-  transform: rotateY(180deg);
+/* The turn: the side you see rotates to edge-on, the two sides swap at that moment, and the new side rotates in, so
+   no side is ever seen from behind (Safari let the text show through the map, mirrored, when the back faced away).
+   Two names for the same keyframes, so that each click restarts the turn; only after a first click. */
+@keyframes hero-turn {
+  0%      { transform: rotateY(0deg); }
+  50%     { transform: rotateY(90deg); }
+  50.001% { transform: rotateY(-90deg); }
+  100%    { transform: rotateY(0deg); }
+}
+
+@keyframes hero-turn-back {
+  0%      { transform: rotateY(0deg); }
+  50%     { transform: rotateY(-90deg); }
+  50.001% { transform: rotateY(90deg); }
+  100%    { transform: rotateY(0deg); }
+}
+
+.hero-flip.turned .hero-flip-inner {
+  animation: hero-turn-back 0.7s ease-in-out;
+}
+
+.hero-flip.turned.show-back .hero-flip-inner {
+  animation: hero-turn 0.7s ease-in-out;
 }
 
 .hero-flip:not(.show-back) .hero-face-back,
@@ -1811,9 +1824,8 @@ body {
   pointer-events: none;                 /* clicks go to the side you see */
 }
 
-/* The side turning away is also hidden at the flip's midpoint, when it is edge-on: Safari shows a turned-away side
-   whose contents are animated or layered (the hero's paragraphs), mirrored, through the one in front, whatever
-   backface-visibility says. Same for the photo. */
+/* The sides swap at the turn's midpoint, when the hero is edge-on (and the photo's sides too, as a guard: Safari
+   shows a turned-away side whose contents are layered, whatever backface-visibility says). */
 .hero-face-front,
 .hero-face-back {
   transition: visibility 0s linear 0.35s;     /* half of the 0.7s turn */
@@ -1867,8 +1879,8 @@ body {
     display: none;
   }
 
-  .hero-flip.show-back .hero-flip-inner {
-    transform: none;
+  .hero-flip .hero-flip-inner {
+    animation: none !important;
   }
 }
 

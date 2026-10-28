@@ -373,6 +373,7 @@ function makeFlip(root, opts) {
         if (off() || !allow(e)) return;
         kept = !kept;                        // keep the side being previewed (or switch, without hover)
         previewing = false;
+        root.classList.add('turned');        // the hero's turn animates only once someone has clicked
         hold = hover && canHover;
         apply();
     });
