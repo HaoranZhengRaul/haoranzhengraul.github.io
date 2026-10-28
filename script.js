@@ -299,3 +299,25 @@ function debounce(func, wait) {
 const debouncedScrollHandler = debounce(updateActiveNavLinkOnScroll, 10);
 window.removeEventListener('scroll', updateActiveNavLinkOnScroll);
 window.addEventListener('scroll', debouncedScrollHandler);
+
+// Hover cards (AMOR, Conceptizer, ...): shift each card sideways so it stays inside the text column
+document.addEventListener('DOMContentLoaded', function() {
+    document.querySelectorAll('.tip-wrap').forEach(function(wrap) {
+        const box = wrap.querySelector('.tip-box');
+        if (!box) return;
+        function place() {
+            const area = (wrap.closest('.hero-text') || document.body).getBoundingClientRect();
+            const minLeft = Math.max(area.left, 8);
+            const maxRight = Math.min(area.right, window.innerWidth - 8);
+            const w = wrap.getBoundingClientRect();
+            const width = box.offsetWidth;
+            const left = w.left + w.width / 2 - width / 2;
+            let shift = 0;
+            if (left + width > maxRight) shift = maxRight - (left + width);
+            if (left + shift < minLeft) shift = minLeft - left;
+            box.style.setProperty('--tip-shift', shift + 'px');
+        }
+        wrap.addEventListener('mouseenter', place);
+        wrap.addEventListener('focusin', place);
+    });
+});

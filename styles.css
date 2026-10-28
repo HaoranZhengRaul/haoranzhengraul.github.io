@@ -1264,7 +1264,7 @@ body {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-  transform: translate(-50%, 4px);
+  transform: translate(calc(-50% + var(--tip-shift, 0px)), 4px);
   transition: opacity var(--transition-fast), transform var(--transition-fast), visibility var(--transition-fast);
   z-index: 20;
 }
@@ -1273,7 +1273,7 @@ body {
   content: "";
   position: absolute;
   top: 100%;
-  left: 50%;
+  left: calc(50% - var(--tip-shift, 0px));
   margin-left: -6px;
   border: 6px solid transparent;
   border-top-color: #fecdd3;
@@ -1286,6 +1286,34 @@ body {
 
 #tip-conceptizer::after {
   border-top-color: #fde68a;
+}
+
+#tip-scene {
+  border-color: #f5d0fe;
+  background: #fdf4ff;
+}
+
+#tip-scene::after {
+  border-top-color: #f5d0fe;
+}
+
+#tip-butterflies {
+  border-color: #bae6fd;
+  background: #f0f9ff;
+}
+
+#tip-butterflies::after {
+  border-top-color: #bae6fd;
+}
+
+.tip-box strong {
+  color: var(--text-primary);
+}
+
+/* Cards paint above the photo column */
+.hero-text {
+  position: relative;
+  z-index: 1;
 }
 
 [data-theme="dark"] .tip-box {
@@ -1301,11 +1329,15 @@ body {
   color: #e11d48;
 }
 
+.tip-star.tip-exchange {
+  color: #c026d3;
+}
+
 .tip-wrap:hover .tip-box,
 .tip-wrap:focus-within .tip-box {
   opacity: 1;
   visibility: visible;
-  transform: translate(-50%, 0);
+  transform: translate(calc(-50% + var(--tip-shift, 0px)), 0);
 }
 
 .casual-link {
