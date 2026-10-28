@@ -1862,3 +1862,12 @@ body {
   text-align: center;
   gap: var(--spacing-3);
 }
+
+/* The Pace Setters badge links to the award's page */
+a.award-badge {
+  text-decoration: none;
+}
+
+a.award-badge:hover {
+  text-decoration: underline;
+}
