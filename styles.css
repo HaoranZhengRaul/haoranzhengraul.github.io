@@ -1840,6 +1840,12 @@ body {
   visibility: visible;
 }
 
+/* The links in the flipping text animate only their colours: their usual "transition: all" also animates
+   visibility, which kept them on screen for 150ms after the side was hidden (WebKit showed them over the map). */
+.hero-face-front a {
+  transition-property: color, border-color, background-color;
+}
+
 .flip-front,
 .flip-back {
   transition: visibility 0s linear 0.4s;      /* half of the photo's 0.8s turn */
