@@ -201,25 +201,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
     
-    // Add touch support for mobile image flip
-    const flipContainer = document.querySelector('.flip-container');
-    if (flipContainer) {
-        let isFlipped = false;
-        
-        flipContainer.addEventListener('touchstart', function(e) {
-            if (window.innerWidth <= 768) {
-                e.preventDefault();
-                isFlipped = !isFlipped;
-                
-                if (isFlipped) {
-                    this.querySelector('.flip-inner').style.transform = 'rotateY(180deg)';
-                } else {
-                    this.querySelector('.flip-inner').style.transform = 'rotateY(0deg)';
-                }
-            }
-        });
-    }
-    
     // Add stagger animation to timeline items
     const timelineItems = document.querySelectorAll('.timeline-item');
     timelineItems.forEach((item, index) => {
@@ -331,5 +312,112 @@ document.addEventListener('DOMContentLoaded', function() {
     window.addEventListener('resize', function() {
         clearTimeout(resizeTimer);
         resizeTimer = setTimeout(placeAll, 100);
+    });
+});
+
+// Flips. The photo: hovering previews the other side, a click keeps it, and the next hover (after the mouse has left)
+// previews the side you left; on phones a tap switches it. The hero's text side: a click on empty space (not on a word,
+// a link or a button) switches it to the research map and back; no hover, so the text stays easy to read and select.
+// On phones the hero doesn't flip (it is the text and the photo, as one).
+const phone = window.matchMedia('(max-width: 768px)');
+
+function onText(e) {
+    // is the click on a rendered character (rather than on blank space)?
+    let node = null, off = 0;
+    if (document.caretRangeFromPoint) {
+        const r = document.caretRangeFromPoint(e.clientX, e.clientY);
+        if (r) { node = r.startContainer; off = r.startOffset; }
+    } else if (document.caretPositionFromPoint) {
+        const pos = document.caretPositionFromPoint(e.clientX, e.clientY);
+        if (pos) { node = pos.offsetNode; off = pos.offset; }
+    }
+    if (!node || node.nodeType !== Node.TEXT_NODE) return false;
+    for (const [a, b] of [[off, off + 1], [off - 1, off]]) {
+        if (a < 0 || b > node.length) continue;
+        const range = document.createRange();
+        range.setStart(node, a);
+        range.setEnd(node, b);
+        for (const rect of range.getClientRects()) {
+            if (e.clientX >= rect.left - 2 && e.clientX <= rect.right + 2 &&
+                e.clientY >= rect.top - 2 && e.clientY <= rect.bottom + 2) return true;
+        }
+    }
+    return false;
+}
+
+function makeFlip(root, opts) {
+    opts = opts || {};
+    const hover = opts.hover !== false;      // preview on hover (the photo) or not (the hero)
+    const allow = opts.allow || function() { return true; };   // which clicks switch sides
+    let kept = false;                        // the side that stays: false = front, true = back
+    let previewing = false;
+    let hold = false;                        // after a click, no preview until the mouse leaves
+    const canHover = window.matchMedia('(hover: hover)').matches;
+    const off = function() { return opts.notOnPhones && phone.matches; };
+    function apply() {
+        const back = kept !== previewing;
+        root.classList.toggle('show-back', back);
+        if (opts.onChange) opts.onChange(back);
+    }
+    if (hover && canHover) {
+        root.addEventListener('mouseenter', function() {
+            if (!off() && !hold) { previewing = true; apply(); }
+        });
+        root.addEventListener('mouseleave', function() {
+            previewing = false;
+            hold = false;
+            apply();
+        });
+    }
+    root.addEventListener('click', function(e) {
+        if (off() || !allow(e)) return;
+        kept = !kept;                        // keep the side being previewed (or switch, without hover)
+        previewing = false;
+        hold = hover && canHover;
+        apply();
+    });
+    root.addEventListener('keydown', function(e) {
+        if (e.target === root && (e.key === 'Enter' || e.key === ' ')) { e.preventDefault(); root.click(); }
+    });
+    phone.addEventListener('change', function() {
+        if (off()) { kept = false; previewing = false; hold = false; apply(); }
+    });
+    apply();
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+    const photo = document.querySelector('.flip-container');
+    if (photo) {
+        photo.setAttribute('tabindex', '0');
+        photo.setAttribute('aria-label', 'Flip the photo');
+        makeFlip(photo);
+    }
+
+    const hero = document.getElementById('hero-flip');
+    if (hero) {
+        const front = hero.querySelector('.hero-face-front');
+        const back = hero.querySelector('.hero-face-back');
+        hero.setAttribute('tabindex', '0');
+        hero.setAttribute('aria-label', 'Flip to my research map');
+        makeFlip(hero, {
+            hover: false,
+            notOnPhones: true,
+            allow: function(e) {
+                if (e.target.closest('a, button, .tip-wrap, .hero-social, .hero-buttons')) return false;
+                if (String(window.getSelection())) return false;            // selecting text
+                return e.target.closest('.hero-face-back') ? true : !onText(e);   // the map: anywhere
+            },
+            onChange: function(showBack) {
+                front.inert = showBack;          // the hidden side takes no focus or clicks
+                back.inert = !showBack;
+            }
+        });
+    }
+
+    // Experience: each stretch of the line fades into the next position's colour
+    const items = Array.from(document.querySelectorAll('.timeline-item'));
+    items.forEach(function(item, i) {
+        const next = items[i + 1];
+        if (next) item.style.setProperty('--c-next', getComputedStyle(next).getPropertyValue('--c').trim());
     });
 });

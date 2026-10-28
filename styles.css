@@ -54,8 +54,35 @@
   --transition-slow: 500ms ease-in-out;
 }
 
+/* The flowchart's colours, one per stage of his path (the same as the figure's PALETTE in
+   writing/sop/build_sop.py). Change a stage here and every place that uses it follows.
+   --X: shapes (bars, markers, badges) · --X-ink: text in that colour · --X-bg: a faint card tint · --X-on: text on --X */
+:root {
+  --undergrad: #7CB9E8; --undergrad-ink: #2F7AB8; --undergrad-bg: #F2F8FD; --undergrad-on: #263340;  /* Ohio State, Dr. Reed */
+  --masters:   #2D6CB5; --masters-ink:   #2D6CB5; --masters-bg:   #EAF0F8; --masters-on:   #FFFFFF;  /* UChicago MS, AI interpretability */
+  --mind:      #5BBF8C; --mind-ink:      #3E8A62; --mind-bg:      #EFF9F4; --mind-on:      #263340;  /* AI consciousness, psychology / cog sci */
+  --ai:        #C2378E; --ai-ink:        #C2378E; --ai-bg:        #F9EBF4; --ai-on:        #FFFFFF;  /* CS / AI: AMOR, Conceptizer, Dr. Shani */
+  --predoc:    #6B43B0; --predoc-ink:    #6B43B0; --predoc-bg:    #F0ECF7; --predoc-on:    #FFFFFF;  /* marketing: the Booth pre-doc, Dr. Kraft */
+  --teaching:  #D95D5D; --teaching-ink:  #B84F4F; --teaching-bg:  #FBEFEF; --teaching-on:  #FFFFFF;  /* teaching */
+  --papers:    #F4876D; --papers-ink:    #E2694C; --papers-bg:    #FEF3F0; --papers-on:    #263340;  /* the publications */
+  --neutral:   #9AA5B1; --neutral-ink:   #46525E; --neutral-bg:   #F5F6F8; --neutral-on:   #263340;  /* research positions */
+  --hub:       #1B7880; --hub-ink:       #1B7880;                                                     /* the question */
+  --bronze:    #8A6A2C; --bronze-ink:    #8A6A2C;                                                     /* the figure's title */
+}
+
 /* Dark theme */
 [data-theme="dark"] {
+  /* the stages on the night theme: text lightened, tints faded toward the dark background */
+  --undergrad-ink: #B7D9F2; --undergrad-bg: #1E2E45;
+  --masters-ink:   #8CAED6; --masters-bg:   #13233D;
+  --mind-ink:      #A5DCC0; --mind-bg:      #1A2F38;
+  --ai-ink:        #DD91C1; --ai-bg:        #281C38;
+  --predoc-ink:    #AE98D4; --predoc-bg:    #1C1D3D;
+  --teaching-ink:  #EAA6A6; --teaching-bg:  #2B2131;
+  --papers-ink:    #F9BDAF; --papers-bg:    #2F2733;
+  --neutral-ink:   #CBD5E1; --neutral-bg:   #1E293B;
+  --hub-ink:       #7FC6CB;
+  --bronze-ink:    #D4B26A;
   --primary-color: #3b82f6;
   --primary-hover: #2563eb;
   --secondary-color: #94a3b8;
@@ -327,7 +354,11 @@ body {
   will-change: transform;
 }
 
-.flip-container:hover .flip-inner {
+.flip-container {
+  cursor: pointer;
+}
+
+.flip-container.show-back .flip-inner {
   transform: rotateY(180deg);
 }
 
@@ -422,14 +453,10 @@ body {
   border-bottom-color: var(--primary-color);
 }
 
-/* Blue Highlights */
-.highlight-blue {
-  color: var(--primary-color);
-  font-weight: 600;
-}
-
-.highlight-blue.focus-phrase {
-  font-weight: 400;
+/* The research focus: bold, in the text's own colour */
+.focus-phrase {
+  font-weight: 700;
+  color: var(--text-primary);
 }
 
 /* Buttons */
@@ -517,8 +544,18 @@ body {
   transform: translateX(-50%);
   width: 60px;
   height: 4px;
-  background-color: var(--primary-color);
+  background-color: var(--section-color, var(--primary-color));
   border-radius: var(--radius-full);
+}
+
+/* Each section's heading in its colour: publications the figure's coral, education the master's blue, experience
+   the figure title's bronze; contact keeps the site's own */
+.research { --section-color: var(--papers); --section-ink: var(--papers-ink); }
+.education { --section-color: var(--masters); --section-ink: var(--masters-ink); }
+.experience { --section-color: var(--bronze); --section-ink: var(--bronze-ink); }
+
+.section-title {
+  color: var(--section-ink, var(--text-primary));
 }
 
 /* Research Section */
@@ -987,16 +1024,6 @@ body {
     position: relative;
   }
   
-  /* Disable flip on mobile, use tap instead */
-  .flip-container:hover .flip-inner {
-    transform: none;
-  }
-  
-  .flip-container:active .flip-inner,
-  .flip-container:focus .flip-inner {
-    transform: rotateY(180deg);
-  }
-  
   .section {
     padding: var(--spacing-12) 0;
   }
@@ -1164,7 +1191,7 @@ body {
 }
 
 .amor-link {
-  color: #e11d48;
+  color: var(--ai-ink);
   font-weight: 600;
   text-decoration: none;
   border-bottom: 1px solid transparent;
@@ -1172,8 +1199,8 @@ body {
 }
 
 .amor-link:hover {
-  color: #e11d48;
-  border-bottom-color: #e11d48;
+  color: var(--ai-ink);
+  border-bottom-color: var(--ai);
 }
 
 .amor-link::after {
@@ -1181,7 +1208,7 @@ body {
 }
 
 .conceptizer-link {
-  color: #ea580c;
+  color: var(--ai-ink);
   font-weight: 600;
   text-decoration: none;
   border-bottom: 1px solid transparent;
@@ -1189,17 +1216,18 @@ body {
 }
 
 .conceptizer-link:hover {
-  color: #ea580c;
-  border-bottom-color: #ea580c;
+  color: var(--ai-ink);
+  border-bottom-color: var(--ai);
 }
 
 .conceptizer-link::after {
   content: " \2605";
 }
 
-/* AI Consciousness is sky blue with a butterfly; AI Interpretability is magenta with an exchange sign (SCENE's counterfactual swap) */
+/* AI Consciousness is the mind green with a butterfly; AI Interpretability the master's blue with an exchange sign
+   (SCENE's counterfactual swap); AMOR and Conceptizer the AI magenta (the flowchart's colours) */
 .casual-link.butterfly-link {
-  color: #0284c7;
+  color: var(--mind-ink);
 }
 
 .casual-link.butterfly-link::after {
@@ -1207,33 +1235,17 @@ body {
 }
 
 .casual-link.butterfly-link:hover {
-  color: #0284c7;
-  border-bottom-color: #0284c7;
+  color: var(--mind-ink);
+  border-bottom-color: var(--mind);
 }
 
 .casual-link.scene-link {
-  color: #c026d3;
+  color: var(--masters-ink);
 }
 
 .casual-link.scene-link:hover {
-  color: #c026d3;
-  border-bottom-color: #c026d3;
-}
-
-[data-theme="dark"] .amor-link {
-  color: #fb7185;
-}
-
-[data-theme="dark"] .conceptizer-link {
-  color: #fb923c;
-}
-
-[data-theme="dark"] .casual-link.scene-link {
-  color: #e879f9;
-}
-
-[data-theme="dark"] .casual-link.butterfly-link {
-  color: #38bdf8;
+  color: var(--masters-ink);
+  border-bottom-color: var(--masters);
 }
 
 .casual-link.scene-link::after {
@@ -1279,25 +1291,21 @@ body {
   border-top-color: var(--tip-color);
 }
 
-/* Each card in its paper's colour: AMOR red, Conceptizer orange, SCENE magenta, ConsciousnessBench sky blue */
-#tip-amor {
-  --tip-color: #e11d48;
-  --tip-bg: #fff1f2;
-}
-
+/* Each card in its paper's stage colour: AMOR and Conceptizer magenta, SCENE blue, ConsciousnessBench green */
+#tip-amor,
 #tip-conceptizer {
-  --tip-color: #ea580c;
-  --tip-bg: #fff7ed;
+  --tip-color: var(--ai);
+  --tip-bg: var(--ai-bg);
 }
 
 #tip-scene {
-  --tip-color: #c026d3;
-  --tip-bg: #fdf4ff;
+  --tip-color: var(--masters);
+  --tip-bg: var(--masters-bg);
 }
 
 #tip-butterflies {
-  --tip-color: #0284c7;
-  --tip-bg: #f0f9ff;
+  --tip-color: var(--mind);
+  --tip-bg: var(--mind-bg);
 }
 
 .tip-box strong {
@@ -1311,7 +1319,7 @@ body {
 }
 
 [data-theme="dark"] .tip-box {
-  background: var(--card-background);
+  background: var(--tip-bg);
 }
 
 .tip-star {
@@ -1393,7 +1401,7 @@ body {
 }
 
 .publication-item:hover .amor-word {
-  color: #e11d48;
+  color: var(--ai-ink);
 }
 
 .publication-item:hover .amor-word::after {
@@ -1405,7 +1413,7 @@ body {
 }
 
 .publication-item:hover .conceptizer-word {
-  color: #ea580c;
+  color: var(--ai-ink);
 }
 
 .publication-item:hover .conceptizer-word::after {
@@ -1418,7 +1426,7 @@ body {
 }
 
 .publication-item:hover .butterfly-word {
-  color: #0284c7;
+  color: var(--mind-ink);
 }
 
 .publication-item:hover .butterfly-word::after {
@@ -1426,7 +1434,7 @@ body {
 }
 
 .publication-item:hover .scene-word {
-  color: #c026d3;
+  color: var(--masters-ink);
 }
 
 .publication-item:hover .scene-word::after {
@@ -1553,4 +1561,304 @@ body {
   .hero-buttons {
     margin-bottom: 0;
   }
+}
+
+
+/* ===================================================================================================================
+   The flowchart's colours on the page. Give an element a stage class and it takes that stage's colours
+   (the variables at the top of this file).
+   =================================================================================================================== */
+.stage-undergrad { --c: var(--undergrad); --c-ink: var(--undergrad-ink); --c-bg: var(--undergrad-bg); --c-on: var(--undergrad-on); }
+.stage-masters   { --c: var(--masters);   --c-ink: var(--masters-ink);   --c-bg: var(--masters-bg);   --c-on: var(--masters-on); }
+.stage-mind      { --c: var(--mind);      --c-ink: var(--mind-ink);      --c-bg: var(--mind-bg);      --c-on: var(--mind-on); }
+.stage-ai        { --c: var(--ai);        --c-ink: var(--ai-ink);        --c-bg: var(--ai-bg);        --c-on: var(--ai-on); }
+.stage-predoc    { --c: var(--predoc);    --c-ink: var(--predoc-ink);    --c-bg: var(--predoc-bg);    --c-on: var(--predoc-on); }
+.stage-teaching  { --c: var(--teaching);  --c-ink: var(--teaching-ink);  --c-bg: var(--teaching-bg);  --c-on: var(--teaching-on); }
+.stage-papers    { --c: var(--papers);    --c-ink: var(--papers-ink);    --c-bg: var(--papers-bg);    --c-on: var(--papers-on); }
+.stage-neutral   { --c: var(--neutral);   --c-ink: var(--neutral-ink);   --c-bg: var(--neutral-bg);   --c-on: var(--neutral-on); }
+
+/* Phrases and links in the text, in their stage's colour */
+.hl {
+  color: var(--c-ink);
+  font-weight: 600;
+}
+
+.hl.soft {
+  font-weight: 500;
+}
+
+.inline-link[class*="stage-"],
+.casual-link[class*="stage-"] {
+  color: var(--c-ink);
+}
+
+.inline-link[class*="stage-"]:hover,
+.casual-link[class*="stage-"]:hover {
+  color: var(--c-ink);
+  border-bottom-color: var(--c);
+}
+
+/* Publications: at rest the section's coral bar; on hover the whole card turns its paper's colour */
+.publication-item {
+  border-left-color: var(--papers);
+}
+
+.publication-item:hover {
+  border-color: var(--c, var(--papers));
+  border-left-color: var(--c, var(--papers));
+  background-color: var(--c-bg, var(--card-background));
+}
+
+.publication-item:hover h4,
+.publication-item:hover .publication-title-link,
+.publication-title-link:hover,
+.publication-item:hover .publication-link {
+  color: var(--c-ink, var(--primary-color));
+}
+
+/* Education: each degree in its colour; on wide screens the two are chevrons, the BS pointing into the MS,
+   like the flowchart (the outer layer is the border colour, the inner one the card) */
+.education-card {
+  border-left: 4px solid var(--c, var(--primary-color));
+}
+
+.education-school {
+  color: var(--c-ink, var(--primary-color));
+}
+
+.education-gpa,
+.award-badge {
+  background-color: var(--c, var(--primary-color));
+  color: var(--c-on, #fff);
+}
+
+@media (min-width: 900px) {
+  .education-grid.chevrons {
+    display: flex;
+    gap: 0;
+    align-items: stretch;
+  }
+
+  .education-grid.chevrons .education-card {
+    flex: 1 1 0;
+    padding: 0;
+    border: none;
+    background: var(--c);
+    box-shadow: none;
+  }
+
+  .education-grid.chevrons .education-card:hover {
+    box-shadow: none;
+  }
+
+  .education-grid.chevrons .edu-inner {
+    height: calc(100% - 12px);
+    margin: 6px;                        /* the border: 6px of the degree's colour */
+    padding: var(--spacing-10) var(--spacing-10) var(--spacing-8);
+    background: var(--c-bg);
+  }
+
+  .education-grid.chevrons .education-header {
+    margin-bottom: var(--spacing-5);
+  }
+
+  .education-grid.chevrons .education-date {
+    margin-bottom: var(--spacing-8);
+  }
+
+  .education-grid.chevrons .education-card:first-child {
+    border-radius: var(--radius-xl) 0 0 var(--radius-xl);
+    clip-path: polygon(0 0, calc(100% - 28px) 0, 100% 50%, calc(100% - 28px) 100%, 0 100%);
+  }
+
+  .education-grid.chevrons .education-card:first-child .edu-inner {
+    border-radius: calc(var(--radius-xl) - 6px) 0 0 calc(var(--radius-xl) - 6px);
+    clip-path: polygon(0 0, calc(100% - 27px) 0, 100% 50%, calc(100% - 27px) 100%, 0 100%);
+    padding-right: calc(var(--spacing-10) + 28px);
+  }
+
+  .education-grid.chevrons .education-card:last-child {
+    margin-left: -22px;                 /* its notch takes the BS's tip, 6px apart */
+    border-radius: 0 var(--radius-xl) var(--radius-xl) 0;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 28px 50%);
+  }
+
+  .education-grid.chevrons .education-card:last-child .edu-inner {
+    border-radius: 0 calc(var(--radius-xl) - 6px) calc(var(--radius-xl) - 6px) 0;
+    clip-path: polygon(1.2px 0, 100% 0, 100% 100%, 1.2px 100%, 28px 50%);
+    padding-left: calc(var(--spacing-10) + 28px);
+  }
+}
+
+/* Experience: each position in its stage's colour; the line between them fades from one colour to the next,
+   like the flowchart's papers line (script.js sets --c-next) */
+.timeline::before {
+  display: none;
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: 29px;
+  top: 12px;
+  width: 2px;
+  height: calc(100% + var(--spacing-10));
+  background: linear-gradient(var(--c, var(--border-color)), var(--c-next, var(--c, var(--border-color))));
+}
+
+.timeline-item:last-child::before {
+  height: calc(100% - 12px);            /* the line runs on to the end of the last card */
+}
+
+.timeline-marker {
+  background-color: var(--c, var(--primary-color));
+}
+
+.timeline-company {
+  color: var(--c-ink, var(--primary-color));
+}
+
+.timeline-content {
+  border-left: 3px solid var(--c, var(--border-color));
+}
+
+.timeline-content:hover {
+  background-color: var(--c-bg, var(--card-background));
+}
+
+@media (max-width: 768px) {
+  .timeline-item::before {
+    left: 14px;
+  }
+}
+
+@media (min-width: 900px) {
+  .timeline {
+    max-width: 1100px;
+  }
+
+  .timeline-item {
+    width: 50%;
+    padding-left: 0;
+    padding-right: var(--spacing-12);
+  }
+
+  .timeline-item:nth-child(even) {
+    margin-left: 50%;
+    padding-left: var(--spacing-12);
+    padding-right: 0;
+  }
+
+  .timeline-marker {
+    left: auto;
+    right: -8px;                        /* on the centre line */
+  }
+
+  .timeline-item:nth-child(even) .timeline-marker {
+    left: -8px;
+    right: auto;
+  }
+
+  .timeline-item::before {
+    left: auto;
+    right: -1px;
+  }
+
+  .timeline-item:nth-child(even)::before {
+    left: -1px;
+    right: auto;
+  }
+}
+
+/* The hero's flip: the text (name to the last paragraph) turns over to the research map (the flowchart) on a click in
+   empty space, and back; the CV and contact buttons stay below it, the photo beside it with its own flip (script.js). */
+.hero-left {
+  min-width: 0;                         /* the flip (name to the last paragraph), then the CV and contact buttons */
+}
+
+.hero-left .hero-buttons {
+  margin-top: var(--spacing-6);
+}
+
+.hero-flip {
+  position: relative;
+  perspective: 2400px;
+}
+
+.hero-flip-inner {
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.7s ease-in-out;
+}
+
+.hero-face {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.hero-face-back {                       /* the text sets the height; the map fits inside it */
+  position: absolute;
+  inset: 0;
+  transform: rotateY(180deg);
+}
+
+.hero-flip.show-back .hero-flip-inner {
+  transform: rotateY(180deg);
+}
+
+.hero-flip:not(.show-back) .hero-face-back,
+.hero-flip.show-back .hero-face-front {
+  pointer-events: none;                 /* clicks go to the side you see */
+}
+
+.research-figure {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: left center;
+}
+
+.research-figure.fig-dark,
+[data-theme="dark"] .research-figure.fig-light {
+  display: none;
+}
+
+[data-theme="dark"] .research-figure.fig-dark {
+  display: block;
+}
+
+
+/* Phones: the hero doesn't flip; it is the text and the photo, as one (a wide map doesn't suit a tall screen).
+   The photo still flips on a tap. */
+@media (max-width: 768px) {
+  .hero-face-back {
+    display: none;
+  }
+
+  .hero-flip.show-back .hero-flip-inner {
+    transform: none;
+  }
+}
+
+/* Education and contact: centred, like their section titles */
+.education-card {
+  text-align: center;
+}
+
+.education-header {
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-3);
+}
+
+.education-awards {
+  align-items: center;
+}
+
+.contact-item {
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  gap: var(--spacing-3);
 }

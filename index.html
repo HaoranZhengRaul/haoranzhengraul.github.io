@@ -31,7 +31,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css?v=20261028">
+    <link rel="stylesheet" href="styles.css?v=20261028b">
 
     <!-- Favicon Links -->
     <link rel="icon" type="image/png" sizes="16x16" href="/assets/IMG/favicon-16x16.png">
@@ -71,7 +71,7 @@
     <section class="hero" id="about">
         <div class="container">
             <div class="hero-content">
-                <div class="hero-text">
+                <div class="hero-left">
                     <h1 class="hero-title">
                         <span class="hero-name">Haoran Zheng</span>
                     </h1>
@@ -92,30 +92,44 @@
                             </a>
                         </div>
                     </div>
-                    <p class="hero-description">
-                        Current <span class="highlight-blue">Pre-doc Fellow at The University of Chicago Booth</span> in <span class="highlight-blue">Quantitative Marketing</span> with <a href="https://www.chicagobooth.edu/faculty/directory/k/andreas-kraft" target="_blank" class="inline-link">Prof. Andreas Kraft</a>. I'm applying to PhD programs in CS, Marketing, or Psychology/Cog Sci this cycle!
-                    </p>
-                    <div class="principles-box">
-                        <p class="principles-box-title">What guides my research</p>
-                        <div class="principle-item">
-                            <i data-lucide="brain" class="principle-icon" aria-hidden="true"></i>
-                            <p class="principle-emphasis">No two intelligences are exactly alike, but they do often rhyme.</p>
-                            <i data-lucide="bot" class="principle-icon" aria-hidden="true"></i>
+                    <div class="hero-flip" id="hero-flip">
+                        <div class="hero-flip-inner">
+                            <div class="hero-face hero-face-front">
+                                <div class="hero-text">
+                                    <p class="hero-description">
+                                        <span class="hl stage-predoc">Pre-doc Fellow at The University of Chicago Booth</span> in <span class="hl stage-predoc">Quantitative Marketing</span> with <a href="https://www.chicagobooth.edu/faculty/directory/k/andreas-kraft" target="_blank" class="inline-link stage-predoc">Prof. Andreas Kraft</a>. I'm applying to PhD programs in <span class="hl stage-ai">Computer Science</span>, <span class="hl stage-predoc">Marketing</span>, or <span class="hl stage-mind">Cognitive Science</span> this cycle!
+                                    </p>
+                                    <div class="principles-box">
+                                        <p class="principles-box-title">What guides my research</p>
+                                        <div class="principle-item">
+                                            <i data-lucide="brain" class="principle-icon" aria-hidden="true"></i>
+                                            <p class="principle-emphasis">No two intelligences are exactly alike, but they do often rhyme.</p>
+                                            <i data-lucide="bot" class="principle-icon" aria-hidden="true"></i>
+                                        </div>
+                                    </div>
+                                    <p class="hero-description work-para">
+                                        My work focuses on <strong class="focus-phrase">improving language models by drawing inspiration from human cognition</strong>, and on how language models, in turn, shape the way humans perceive the world. It started in
+                                        <span class="tip-wrap"><a href="/papers/scene.html" class="casual-link scene-link stage-masters" aria-describedby="tip-scene">AI Interpretability</a><span class="tip-box" id="tip-scene" role="tooltip"><span class="tip-star" aria-hidden="true">&#8644;</span><strong>SCENE</strong>: an empirical evaluation framework for explainable AI techniques in NLP tasks, using soft counterfactual explanations.</span></span>
+                                        and
+                                        <span class="tip-wrap"><a href="/papers/butterflies.html" class="casual-link butterfly-link stage-mind" aria-describedby="tip-butterflies">AI Consciousness</a><span class="tip-box" id="tip-butterflies" role="tooltip"><span class="tip-star" aria-hidden="true">&#129419;</span><strong>ConsciousnessBench</strong>: a benchmark for evaluating consciousness-relevant traits in large language models through theory-grounded self-reports.</span></span>. Most recently, I designed
+                                        <span class="tip-wrap"><a href="https://arxiv.org/abs/2602.13215" target="_blank" class="amor-link" aria-describedby="tip-amor">AMOR</a><span class="tip-box" id="tip-amor" role="tooltip"><span class="tip-star" aria-hidden="true">&#9829;</span>A hybrid architecture inspired by Daniel Kahneman's <em>Thinking, Fast and Slow</em> &mdash; appending a few slow, deliberate attention layers gated by the model entropy to a fast, intuitive recurrent model.</span></span>
+                                        and
+                                        <span class="tip-wrap"><a href="https://arxiv.org/abs/2610.33027" target="_blank" class="conceptizer-link" aria-describedby="tip-conceptizer">Conceptizer</a><span class="tip-box" id="tip-conceptizer" role="tooltip"><span class="tip-star" aria-hidden="true">&#9733;</span>A training framework that extends next-token prediction with a reward for meaning &mdash; so language models learn to predict meaning, not just the next token.</span></span>
+                                        (advised by <a href="https://sites.google.com/mail.huji.ac.il/dr-chen-shani?usp=sharing" target="_blank" class="inline-link stage-ai">Dr. Chen Shani &ndash; Stanford</a>). More on my <a href="https://scholar.google.com/citations?user=t8z21IQAAAAJ&hl=en" target="_blank" class="bold-link">Google Scholar</a>.
+                                    </p>
+                                    <p class="hero-description">
+                                        In past lives, I did my Master's in Data Science at The University of Chicago (GPA 4.0), triple-majored in Economics, Finance, and History at The Ohio State University (<a href="https://fisher.osu.edu/about/awards/pace-setters" target="_blank" class="text-link">top 1% Honors</a>), worked as a research assistant in Behavioral Science (<a href="https://scholar.google.com/citations?user=4BpUtrQAAAAJ&hl=en" target="_blank" class="casual-link stage-mind">Dr. Nick Epley &ndash; UChicago</a>) and in History (<a href="https://history.osu.edu/people/reed.434" target="_blank" class="casual-link stage-undergrad">Dr. Christopher A. Reed &ndash; OSU</a>), served as a finance analyst at NASDAQ-listed <a href="https://www.nasdaq.com/market-activity/stocks/caas" target="_blank" class="text-link">CAAS Inc.</a>, and taught Statistics at Ohio State.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="hero-face hero-face-back" inert>
+                                <img src="./assets/IMG/research-figure.png" class="research-figure fig-light" loading="lazy" decoding="async"
+                                     alt="Haoran Zheng's research experience: education, teaching, principal investigators and first-author papers, around the question: what is the nature of intelligence?">
+                                <img src="./assets/IMG/research-figure-dark.png" class="research-figure fig-dark" loading="lazy" decoding="async"
+                                     alt="Haoran Zheng's research experience: education, teaching, principal investigators and first-author papers, around the question: what is the nature of intelligence?">
+                            </div>
                         </div>
                     </div>
-                    <p class="hero-description work-para">
-                        My work focuses on <span class="highlight-blue focus-phrase">improving language models by drawing inspiration from human cognition</span>, and on how language models, in turn, shape the way humans perceive the world. It started in
-                        <span class="tip-wrap"><a href="/papers/scene.html" class="casual-link scene-link" aria-describedby="tip-scene">AI Interpretability</a><span class="tip-box" id="tip-scene" role="tooltip"><span class="tip-star" aria-hidden="true">&#8644;</span><strong>SCENE</strong>: an empirical evaluation framework for explainable AI techniques in NLP tasks, using soft counterfactual explanations.</span></span>
-                        and
-                        <span class="tip-wrap"><a href="/papers/butterflies.html" class="casual-link butterfly-link" aria-describedby="tip-butterflies">AI Consciousness</a><span class="tip-box" id="tip-butterflies" role="tooltip"><span class="tip-star" aria-hidden="true">&#129419;</span><strong>ConsciousnessBench</strong>: a benchmark for evaluating consciousness-relevant traits in large language models through theory-grounded self-reports.</span></span>. Most recently, I designed
-                        <span class="tip-wrap"><a href="https://arxiv.org/abs/2602.13215" target="_blank" class="amor-link" aria-describedby="tip-amor">AMOR</a><span class="tip-box" id="tip-amor" role="tooltip"><span class="tip-star" aria-hidden="true">&#9829;</span>A hybrid architecture inspired by Daniel Kahneman's <em>Thinking, Fast and Slow</em> &mdash; appending a few slow, deliberate attention layers gated by the model entropy to a fast, intuitive recurrent model.</span></span>
-                        and
-                        <span class="tip-wrap"><a href="https://arxiv.org/abs/2610.33027" target="_blank" class="conceptizer-link" aria-describedby="tip-conceptizer">Conceptizer</a><span class="tip-box" id="tip-conceptizer" role="tooltip"><span class="tip-star" aria-hidden="true">&#9733;</span>A training framework that extends next-token prediction with a reward for meaning &mdash; so language models learn to predict meaning, not just the next token.</span></span>
-                        (advised by <a href="https://sites.google.com/mail.huji.ac.il/dr-chen-shani?usp=sharing" target="_blank" class="inline-link">Dr. Chen Shani &ndash; Stanford</a>). More on my <a href="https://scholar.google.com/citations?user=t8z21IQAAAAJ&hl=en" target="_blank" class="bold-link">Google Scholar</a>.
-                    </p>
-                    <p class="hero-description">
-                        In past lives, I did my Master's in Data Science at The University of Chicago (GPA 4.0), triple-majored in Economics, Finance, and History at The Ohio State University (<a href="https://fisher.osu.edu/about/awards/pace-setters" target="_blank" class="text-link">top 1% Honors</a>), worked as a research assistant in Behavioral Science (<a href="https://scholar.google.com/citations?user=4BpUtrQAAAAJ&hl=en" target="_blank" class="casual-link">Dr. Nick Epley &ndash; UChicago</a>) and in History (<a href="https://history.osu.edu/people/reed.434" target="_blank" class="casual-link">Dr. Christopher A. Reed &ndash; OSU</a>), served as a finance analyst at NASDAQ-listed <a href="https://www.nasdaq.com/market-activity/stocks/caas" target="_blank" class="text-link">CAAS Inc.</a>, and taught Statistics at Ohio State.
-                    </p>
                     <div class="hero-buttons">
                         <a href="./Haoran Resume.pdf" class="btn btn-primary" target="_blank">
                             <i data-lucide="download"></i>
@@ -152,7 +166,7 @@
         <div class="container">
             <h2 class="section-title">Research Publications</h2>
             <div class="publications">
-                <div class="publication-item">
+                <div class="publication-item stage-ai">
                     <div class="publication-content">
                         <h4><a href="https://arxiv.org/abs/2610.33027" class="publication-title-link" target="_blank" rel="noopener noreferrer">"<span class="conceptizer-word">Conceptizer</span>: Next-Token Prediction Is Not All You Need"</a></h4>
                         <p class="publication-meta">2026 • First Author</p>
@@ -164,7 +178,7 @@
                         <i data-lucide="external-link"></i>
                     </a>
                 </div>
-                <div class="publication-item">
+                <div class="publication-item stage-ai">
                     <div class="publication-content">
                         <h4><a href="https://arxiv.org/abs/2602.13215" class="publication-title-link" target="_blank" rel="noopener noreferrer">"When to Think Fast and Slow? <span class="amor-word">AMOR</span>: Adaptive Entropy Gate for Hybrid Models"</a></h4>
                         <p class="publication-meta">2026 • First Author</p>
@@ -176,7 +190,7 @@
                         <i data-lucide="external-link"></i>
                     </a>
                 </div>
-                <div class="publication-item">
+                <div class="publication-item stage-mind">
                     <div class="publication-content">
                         <h4><a href="https://osf.io/preprints/psyarxiv/fqwp9_v1" class="publication-title-link" target="_blank" rel="noopener noreferrer">"<span class="butterfly-word">Do AIs Dream of Electric Butterflies</span>? Benchmarking LLM Consciousness via Theory-Grounded Self-Reports"</a></h4>
                         <p class="publication-meta">2025 • First Author</p>
@@ -188,7 +202,7 @@
                         <i data-lucide="external-link"></i>
                     </a>
                 </div>
-                <div class="publication-item">
+                <div class="publication-item stage-masters">
                     <div class="publication-content">
                         <h4><a href="https://arxiv.org/abs/2408.04575" class="publication-title-link" target="_blank" rel="noopener noreferrer">"<span class="scene-word">SCENE</span>: Evaluating Explainable AI Techniques Using Soft Counterfactuals"</a></h4>
                         <p class="publication-meta">2024 • First Author</p>
@@ -208,31 +222,35 @@
     <section class="section education" id="education">
         <div class="container">
             <h2 class="section-title">Education</h2>
-            <div class="education-grid">
-                <div class="education-card">
-                    <div class="education-header">
-                        <h3>Master of Science in Data Science</h3>
-                        <span class="education-gpa">GPA: 4.0</span>
-                    </div>
-                    <p class="education-school">The University of Chicago</p>
-                    <p class="education-date">December 2024</p>
-                    <div class="education-details">
-                        <p><strong>Thesis:</strong> "Demystifying the Black Box: An Empirical Evaluation of Explainable AI Techniques in NLP Tasks"</p>
-                        <p><strong>Advisor:</strong> Dr. Utku Pamuksuz</p>
-                    </div>
-                </div>
-                <div class="education-card">
-                    <div class="education-header">
-                        <h3>Bachelor of Science in Economics</h3>
-                        <div class="education-awards">
-                            <span class="award-badge">Pace Setters Award</span>
+            <div class="education-grid chevrons">
+                <div class="education-card stage-undergrad">
+                    <div class="edu-inner">
+                        <div class="education-header">
+                            <h3>Bachelor of Science in Economics</h3>
+                            <div class="education-awards">
+                                <span class="award-badge">Pace Setters Award</span>
+                            </div>
+                        </div>
+                        <p class="education-school">The Ohio State University</p>
+                        <p class="education-date">May 2022</p>
+                        <div class="education-details">
+                            <p><strong>Triple Major:</strong> Economics, Finance, and History</p>
+                            <p><strong>Recognition:</strong> Top 1% of students (highest honor)</p>
                         </div>
                     </div>
-                    <p class="education-school">The Ohio State University</p>
-                    <p class="education-date">May 2022</p>
-                    <div class="education-details">
-                        <p><strong>Triple Major:</strong> Economics, Finance, and History</p>
-                        <p><strong>Recognition:</strong> Top 1% of students (highest honor)</p>
+                </div>
+                <div class="education-card stage-masters">
+                    <div class="edu-inner">
+                        <div class="education-header">
+                            <h3>Master of Science in Data Science</h3>
+                            <span class="education-gpa">GPA: 4.0</span>
+                        </div>
+                        <p class="education-school">The University of Chicago</p>
+                        <p class="education-date">December 2024</p>
+                        <div class="education-details">
+                            <p><strong>Thesis:</strong> "Demystifying the Black Box: An Empirical Evaluation of Explainable AI Techniques in NLP Tasks"</p>
+                            <p><strong>Advisor:</strong> Dr. Utku Pamuksuz</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -244,7 +262,7 @@
         <div class="container">
             <h2 class="section-title">Experience</h2>
             <div class="timeline">
-                <div class="timeline-item">
+                <div class="timeline-item stage-predoc">
                     <div class="timeline-marker"></div>
                     <div class="timeline-content">
                         <h3>Research Professional in Quantitative Marketing</h3>
@@ -257,7 +275,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="timeline-item">
+                <div class="timeline-item stage-mind">
                     <div class="timeline-marker"></div>
                     <div class="timeline-content">
                         <h3>Research Assistant in Behavioral Science</h3>
@@ -268,7 +286,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="timeline-item">
+                <div class="timeline-item stage-mind">
                     <div class="timeline-marker"></div>
                     <div class="timeline-content">
                         <h3>Research Specialist in Behavioral Science</h3>
@@ -279,7 +297,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="timeline-item">
+                <div class="timeline-item stage-undergrad">
                     <div class="timeline-marker"></div>
                     <div class="timeline-content">
                         <h3>Research Assistant in History</h3>
@@ -290,7 +308,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="timeline-item">
+                <div class="timeline-item stage-neutral">
                     <div class="timeline-marker"></div>
                     <div class="timeline-content">
                         <h3>Financial Analyst</h3>
@@ -301,7 +319,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="timeline-item">
+                <div class="timeline-item stage-teaching">
                     <div class="timeline-marker"></div>
                     <div class="timeline-content">
                         <h3>Lead Teaching Assistant for Statistics 2320</h3>
@@ -380,6 +398,6 @@
         </div>
     </footer>
 
-    <script src="script.js?v=20261028"></script>
+    <script src="script.js?v=20261028b"></script>
 </body>
 </html>
