@@ -1872,7 +1872,7 @@ body {
   }
 }
 
-/* Education and contact: centred, like their section titles */
+/* Education centred, like its section title; contact centred on phones */
 .education-card {
   text-align: center;
 }
@@ -1887,11 +1887,13 @@ body {
   align-items: center;
 }
 
-.contact-item {
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  gap: var(--spacing-3);
+@media (max-width: 768px) {             /* contact cards: centred on phones, the original layout on wider screens */
+  .contact-item {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: var(--spacing-3);
+  }
 }
 
 /* The Pace Setters badge links to the award's page */
