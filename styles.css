@@ -1263,7 +1263,7 @@ body {
 }
 
 .casual-link.veil-link:hover::after {
-  content: " \1F60A\1F470";
+  content: " \1F470";
 }
 
 /* Hover cards on AMOR and Conceptizer: a small box saying what each paper is */
@@ -1465,7 +1465,7 @@ body {
 }
 
 .publication-item:hover .veil-word::after {
-  content: " \1F60A\1F470";
+  content: " \1F470";
 }
 
 /* Nav bar -- darker blue with white text */
