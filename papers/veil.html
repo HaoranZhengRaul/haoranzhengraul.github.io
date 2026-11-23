@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Can You Tell a Smile from a Veil? - Haoran Zheng</title>
+    <meta name="author" content="Haoran Zheng">
+    <meta name="description" content="How buyers respond when AI rewrites product descriptions: an LLM rewriting experiment and evidence from Municibid, an online auction platform for U.S. government surplus.">
+    <meta name="keywords" content="generative AI, AI-written product descriptions, online auctions, Municibid, persuasion, large language models, marketing">
+    <link rel="canonical" href="https://haoranzhengraul.github.io/papers/veil.html">
+
+    <!-- Open Graph Metadata -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://haoranzhengraul.github.io/papers/veil.html">
+    <meta property="og:title" content="Can You Tell a Smile from a Veil? How Buyers Respond When AI Rewrites Product Descriptions">
+    <meta property="og:description" content="How buyers respond when AI rewrites product descriptions: an LLM rewriting experiment and evidence from Municibid, an online auction platform for U.S. government surplus.">
+    <meta property="og:image" content="https://haoranzhengraul.github.io/assets/IMG/thumbnail.jpg">
+    <meta property="og:image:width" content="1135">
+    <meta property="og:image:height" content="639">
+    <meta property="og:image:type" content="image/jpeg">
+
+    <!-- Twitter Card Metadata -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://haoranzhengraul.github.io/papers/veil.html">
+    <meta name="twitter:title" content="Can You Tell a Smile from a Veil? How Buyers Respond When AI Rewrites Product Descriptions">
+    <meta name="twitter:description" content="How buyers respond when AI rewrites product descriptions: an LLM rewriting experiment and evidence from Municibid, an online auction platform for U.S. government surplus.">
+    <meta name="twitter:image" content="https://haoranzhengraul.github.io/assets/IMG/thumbnail.jpg">
+    <meta name="twitter:image:alt" content="Can You Tell a Smile from a Veil? Research Paper">
+    <meta name="twitter:creator" content="@HaoranZhengRaul">
+
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ScholarlyArticle",
+      "headline": "Can You Tell a Smile from a Veil? How Buyers Respond When AI Rewrites Product Descriptions",
+      "author": {
+        "@type": "Person",
+        "name": "Haoran Zheng",
+        "affiliation": {
+          "@type": "Organization",
+          "name": "The University of Chicago Booth School of Business"
+        }
+      },
+      "datePublished": "2026-11-23",
+      "description": "How buyers respond when AI rewrites product descriptions: an LLM rewriting experiment and evidence from Municibid, an online auction platform for U.S. government surplus.",
+      "keywords": "generative AI, AI-written product descriptions, online auctions, Municibid, persuasion, large language models, marketing",
+      "url": "https://haoranzhengraul.github.io/papers/veil.html"
+    }
+    </script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        header {
+            margin-bottom: 30px;
+            border-bottom: 2px solid #e0e0e0;
+            padding-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 2em;
+            margin-bottom: 15px;
+            color: #1a1a1a;
+            line-height: 1.3;
+        }
+
+        .metadata {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            font-size: 0.95em;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .metadata-item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .metadata-item strong {
+            color: #333;
+        }
+
+        .abstract {
+            background-color: #f5f5f5;
+            padding: 20px;
+            border-radius: 6px;
+            margin: 30px 0;
+        }
+
+        .abstract h2 {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+            color: #1a1a1a;
+        }
+
+        .abstract p {
+            color: #444;
+        }
+
+        .pdf-container {
+            margin: 30px 0;
+        }
+
+        .pdf-container h2 {
+            font-size: 1.3em;
+            margin-bottom: 15px;
+            color: #1a1a1a;
+        }
+
+        embed {
+            width: 100%;
+            height: 700px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        .actions {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+            margin: 20px 0;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            font-size: 0.95em;
+        }
+
+        .btn-primary {
+            background-color: #0066cc;
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background-color: #0052a3;
+        }
+
+        .btn-secondary {
+            background-color: #f5f5f5;
+            color: #333;
+            border: 1px solid #ddd;
+        }
+
+        .btn-secondary:hover {
+            background-color: #e8e8e8;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-bottom: 20px;
+            color: #0066cc;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 2px solid #e0e0e0;
+            color: #666;
+            font-size: 0.9em;
+        }
+
+        footer a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 1.5em;
+            }
+
+            embed {
+                height: 500px;
+            }
+
+            .actions {
+                flex-direction: column;
+            }
+
+            .btn {
+                width: 100%;
+                justify-content: center;
+            }
+        }
+
+        /* Accessibility improvements */
+        a:focus, button:focus {
+            outline: 2px solid #0066cc;
+            outline-offset: 2px;
+        }
+
+        .visually-hidden {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            margin: -1px;
+            padding: 0;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="/" class="back-link" aria-label="Back to homepage">← Back to Home</a>
+
+        <main role="main">
+            <header>
+                <h1>Can You Tell a Smile from a Veil? How Buyers Respond When AI Rewrites Product Descriptions</h1>
+
+                <div class="metadata">
+                    <div class="metadata-item">
+                        <strong>Author:</strong> Haoran Zheng
+                    </div>
+                    <div class="metadata-item">
+                        <strong>Date:</strong> <time datetime="2026-11">November 2026</time> (working paper)
+                    </div>
+                </div>
+
+                <div class="actions">
+                    <a href="/papers/Can-You-Tell-a-Smile-from-a-Veil-How-Buyers-Respond-When-AI-Rewrites-Product-Descriptions.pdf" class="btn btn-primary" download aria-label="Download PDF">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                        Download PDF
+                    </a>
+                </div>
+            </header>
+
+            <section class="abstract" aria-labelledby="abstract-heading">
+                <h2 id="abstract-heading">Abstract</h2>
+                <p>
+                    More and more marketplaces give sellers the option of having AI rewrite their product descriptions. A description carries two kinds of content: informative content that a buyer can check and persuasive content meant to win the buyer over. Persuasive content used to cost sellers time, so it told buyers something about the item; AI makes it almost free for every seller. How do buyers respond when AI rewrites the descriptions they read? We study Municibid, an online auction platform on which U.S. government agencies sell surplus vehicles and equipment. In January 2025, Municibid gave its sellers an AI writing assistant. First, in a controlled experiment, three large language models (LLMs) rewrote listings from before ChatGPT. They kept nearly all the facts and added persuasive content. However, when asked to make a listing appealing, the LLMs also added unsupported claims and made stated problems harder to see at first glance. Second, in the actual market, listings that a detector flagged as AI-written showed no detectable difference in page views, buyer questions to sellers or bids from the same seller’s human-written listings, and those questions almost never mentioned AI. Overall, we found that buyers did not turn away from AI-written listings: 86% of human-written listings received a bid, and AI-written ones by the same sellers did so 1.2 percentage points more often (95% CI [−4.9, +7.4]).
+                </p>
+            </section>
+
+            <section class="pdf-container" aria-labelledby="pdf-heading">
+                <h2 id="pdf-heading">Paper Preview</h2>
+                <embed src="/papers/Can-You-Tell-a-Smile-from-a-Veil-How-Buyers-Respond-When-AI-Rewrites-Product-Descriptions.pdf" type="application/pdf" aria-label="PDF preview of the research paper" />
+                <p style="margin-top: 10px; color: #666; font-size: 0.9em;">
+                    If the PDF preview doesn't load, please use the download button above.
+                </p>
+            </section>
+        </main>
+
+        <footer role="contentinfo">
+            <p><strong>Date:</strong> <time datetime="2026-11">November 2026</time> (working paper)</p>
+            <p style="margin-top: 15px;">&copy; 2026 Haoran Zheng. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
