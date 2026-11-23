@@ -1455,6 +1455,19 @@ body {
   content: " \21C4";
 }
 
+/* The working paper's card: "Smile from a Veil" in the pre-doc purple, with a smile and a veil (2026-11-23) */
+.veil-word {
+  transition: color var(--transition-fast);
+}
+
+.publication-item:hover .veil-word {
+  color: var(--predoc-ink);
+}
+
+.publication-item:hover .veil-word::after {
+  content: " \1F60A\1F470";
+}
+
 /* Nav bar -- darker blue with white text */
 .nav {
   background-color: #1e40af;
