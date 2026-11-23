@@ -1251,6 +1251,21 @@ body {
   content: " \21C4";
 }
 
+/* The working paper (the Booth pre-doc, Dr. Kraft): plain text at rest; on hover the pre-doc purple, underlined,
+   with a smile and a veil after it (his ask, 2026-11-23) */
+.casual-link.veil-link {
+  color: inherit;
+}
+
+.casual-link.veil-link:hover {
+  color: var(--predoc-ink);
+  border-bottom-color: var(--predoc);
+}
+
+.casual-link.veil-link:hover::after {
+  content: " \1F60A\1F470";
+}
+
 /* Hover cards on AMOR and Conceptizer: a small box saying what each paper is */
 .tip-wrap {
   position: relative;
